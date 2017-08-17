@@ -7,19 +7,19 @@
     <meta name = "keywords" content = "resume, Axel, Maciejewski, development, programming, C#, .NET, ASP.NET"/>
 
     <link rel="stylesheet" href="Content/bootstrap.css">
-    <link rel="stylesheet" href="Content/bootstrap.min.css">
+
     <link rel="stylesheet" href="Content/bootstrap-theme.css">
-    <link rel="stylesheet" href="Content/bootstrap-theme.min.css">
+
     <link rel="stylesheet" href="Content/font-awesome.css">
-    <link rel="stylesheet" href="Content/font-awesome.min.css">
 
     
     <link rel="stylesheet" href="Content/Site.css">
 
-	<!--
+    <script src="Scripts/jquery-3.1.1.js"></script>
     <script src="Scripts/bootstrap.js"></script>
-    <script src="Scripts/bootstrap.min.js"></script>
+    <script src="Scripts/Site.js"></script>
 
+    
     <script>
 	
         $(document).on('click',
@@ -33,7 +33,7 @@
 
    
     </script>
-	-->
+	
     <title>Axel MACIEJEWSKI</title>
    
 </head>
@@ -42,6 +42,11 @@
 <div class="navbar navbar-inverse navbar-fixed-top">
     <div class="container">
         <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
             <a href="#About" class="navbar-brand"> <strong>Axel MACIEJEWSKI</strong> </a>
         </div>
         <div class="navbar-collapse collapse">
@@ -89,9 +94,46 @@
             <h2 class="text-center"><strong> Skills </strong></h2>
             <hr />
             <h3> <strong>Languages</strong></h3>
-         
 
-            <table>
+            <div class="skillbar clearfix " data-percent="50%">
+                <div class="skillbar-title" style="background: #2980b9;"><span>C/C++</span></div>
+                <div class="skillbar-bar" style="background: #3498db;"></div>
+                <div class="skill-bar-percent">Inttermediate</div>
+            </div> 
+            
+            <div class="skillbar clearfix " data-percent="75%">
+                <div class="skillbar-title" style="background: #2c3e50;"><span>C#</span></div>
+                <div class="skillbar-bar" style="background: #2c3e50;"></div>
+                <div class="skill-bar-percent">Advanced</div>
+            </div> 
+            
+            <div class="skillbar clearfix " data-percent="50%">
+                <div class="skillbar-title" style="background: #d35400;"><span>ASP.NET</span></div>
+                <div class="skillbar-bar" style="background: #e67e22;"></div>
+                <div class="skill-bar-percent">Intermediate</div>
+            </div> 
+            
+            <div class="skillbar clearfix " data-percent="50%">
+                <div class="skillbar-title" style="background: #27ae60;"><span>Java</span></div>
+                <div class="skillbar-bar" style="background: #2ecc71;"></div>
+                <div class="skill-bar-percent">Intermediate</div>
+            </div> 
+            
+            <div class="skillbar clearfix " data-percent="75%">
+                <div class="skillbar-title" style="background: #cdc11c;"><span>Python</span></div>
+                <div class="skillbar-bar" style="background: #ddc40f;"></div>
+                <div class="skill-bar-percent">Advanced</div>
+            </div> 
+            
+
+            <div class="skillbar clearfix " data-percent="75%">
+                <div class="skillbar-title" style="background: #162477;"><span>SQL</span></div>
+                <div class="skillbar-bar" style="background: #2030aa;"></div>
+                <div class="skill-bar-percent">Advanced</div>
+            </div>
+
+
+            <table class="lg-screen-skills">
                 <tr>
                     <td class="skills_td_margin"> C/C++ </td>
                     <td> Intermediate</td>
@@ -123,14 +165,6 @@
 
                 <tr>
                     <td class="skills_td_margin">
-                        <span lang="EN-US">JavaScript </span> 
-                    </td>
-                    <td>
-                        <span lang="EN-US">Intermediate</span></td>
-                </tr>
-
-                <tr>
-                    <td class="skills_td_margin">
                         <span lang="EN-US">SQL </span> 
                     </td>
                     <td>
@@ -140,7 +174,39 @@
                 
             <br />
             <h3> <strong>Software</strong></h3>
-            <table>
+            
+            <div class="skillbar clearfix " data-percent="75%">
+                <div class="skillbar-title" style="background: #2980b9;"><span>Visual Studio</span></div>
+                <div class="skillbar-bar" style="background: #3498db;"></div>
+                <div class="skill-bar-percent">Advanced</div>
+            </div>
+
+            <div class="skillbar clearfix " data-percent="50%">
+                <div class="skillbar-title" style="background: #2c3e50;"><span>Xamarin</span></div>
+                <div class="skillbar-bar" style="background: #2c3e50;"></div>
+                <div class="skill-bar-percent">Intermediate</div>
+            </div>
+
+            <div class="skillbar clearfix " data-percent="25%">
+                <div class="skillbar-title" style="background: #d35400;"><span>MySQL</span></div>
+                <div class="skillbar-bar" style="background: #e67e22;"></div>
+                <div class="skill-bar-percent">Beginner</div>
+            </div>
+
+            <div class="skillbar clearfix " data-percent="25%">
+                <div class="skillbar-title" style="background: #27ae60;"><span>Oracle</span></div>
+                <div class="skillbar-bar" style="background: #2ecc71;"></div>
+                <div class="skill-bar-percent">Beginner</div>
+            </div>
+
+            <div class="skillbar clearfix " data-percent="50%">
+                <div class="skillbar-title" style="background: #cdc11c;"><span>SQL Server</span></div>
+                <div class="skillbar-bar" style="background: #ddc40f;"></div>
+                <div class="skill-bar-percent">Intermediate</div>
+            </div>
+
+
+            <table class="lg-screen-skills">
                 <tr>
                     <td class="skills_td_margin"> Visual Studio </td>
                     <td> Advanced</td>
