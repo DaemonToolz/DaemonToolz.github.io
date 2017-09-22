@@ -619,11 +619,15 @@
             <p>
                 Workstation is a pesronal project based on the understanding of versioning and collaboration tools.
                 This model is made in C# and is really simplified compared to heavy systems like
-                SLACK, GitHub, Team Foundation and so on.
+                SLACK, GitHub, Team Foundation and so on. 
+                <br />
+                New componants, althought, emerged from themselves and most of them will be written in Go to simplify the process. 
+                
             </p>
             <p>
                 Most of the structure is not complete yet, especially security and the main features. The browser version is focused
-                yet Universal Windows Project and Mobile Projects (Android and probably IOS) are planned. 
+                yet Universal Windows Project and Mobile Projects (Android and probably IOS) are planned. The actual version is barely in 
+                Alpha stage and only a "template" is planned for UWP - the real implementation has not started yet. 
        
             </p>
             <p>
@@ -675,31 +679,31 @@
 <!-- TO BE MOVED -->
 <script>
     $(document).ready(function () {
-            
-            var categories = {
-                "0": {
-                    "Name": "Mailbox",
-                    "Content": 2,
-                    "Descriptions": [
-                        "Personal Mailbox, from which you can send and receive all your messages.",
-                        "As most of the content, it is responsive. At the end, there will be several supports. Browser, Application and Mobile"
-                    ]
-                },
-                "1": {
-                    "Name": "Home",
-                    "Content": 2,
-                    "Descriptions": [
-                        "From the home menu, you will be able to see your tasks, messages and news.",
-                        ""
-                    ]
-                },
-                "2": {
-                    "Name": "Notification",
-                    "Content": 1,
-                    "Descriptions": [
-                        "The notification center will help you seeing what occurs while you're [not] there. This part is made using SignalR combined to a WCF Duplex channel for a real-time update."
-                    ]
-                },
+
+        var categories = {
+            "0": {
+                "Name": "Mailbox",
+                "Content": 2,
+                "Descriptions": [
+                    "Personal Mailbox, from which you can send and receive all your messages.",
+                    "As most of the content, it is responsive. At the end, there will be several supports. Browser, Application and Mobile"
+                ]
+            },
+            "1": {
+                "Name": "Home",
+                "Content": 2,
+                "Descriptions": [
+                    "From the home menu, you will be able to see your tasks, messages and news.",
+                    ""
+                ]
+            },
+            "2": {
+                "Name": "Notification",
+                "Content": 1,
+                "Descriptions": [
+                    "The notification center will help you seeing what occurs while you're [not] there. This part is made using SignalR combined to a WCF Duplex channel for a real-time update."
+                ]
+            },
             "3": {
                 "Name": "Project",
                 "Content": 7,
@@ -730,7 +734,22 @@
                     "As an admin, you can edit anybody's profile even yours. But as a user, you can only edit yours, it is even restrained",
                     "Finally, you can see all connected users. This uses the SignalR system for the notification yet, in the future, a chat system will be provided alongside the mailbox."
                 ]
-            }
+            },
+            "6": {
+                "Name": "Admin",
+                "Content": 9,
+                "Descriptions": [
+                    "As expected, there is a browser for the administration and this one regroups several concepts. One of them is the side service management, that start automatically at the pool application start.",
+                    "In addition, one of the point is to, also, monitor every services related to the project. It includes the databases, the side services and other hosted services.",
+                    "In fact, there is not much differences with the client-sided browser, except one of the most important, the user creation. It includes lots of data, but most are not entirely used.",
+                    "So, the panel is quite different.",
+                    "Another exclusive element is the creation of department and ranks.",
+                    "The ranks represent the capabilities of a user, it also represents his rank within the company, somehow. It means that Human Resources are likely to be manage users and nothing else, while team managers manage teams and eventually users and projects.",
+                    "Unique feature [at the moment] is the Dashboard. It allows the administrators [or anybody with enough authorizations] to check the projects.",
+                    "This includes, all the activities - total changes",
+                    "But also a precise monitoring on both comments and changesets for each files. But, as told, everything is merely in Alpha."
+                ]
+    }
         }
 
         var carouselTarget = "<div class='col-md-12 col-xs-12 col-xs-12'>" +
