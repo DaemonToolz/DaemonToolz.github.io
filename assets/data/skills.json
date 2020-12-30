@@ -1,0 +1,40 @@
+{
+    "skills":[
+        {
+            "name": "C#",
+            "level": "Advanced"
+        }, 
+        {
+            "name": "ASP.NET",
+            "level": "Advanced"
+        },
+        {
+            "name": "GO",
+            "level": "Advanced"
+        }, 
+        {
+            "name": "Angular 2+",
+            "level": "Advanced"
+        }, 
+        {
+            "name": "C/C++",
+            "level": "Intermediate"
+        }, 
+        {
+            "name": "Rust",
+            "level": "Beginner"
+        }, 
+        {
+            "name": "NoSQL",
+            "level": "Intermediate"
+        }, 
+        {
+            "name": "T-SQL",
+            "level": "Intermediate"
+        }, 
+        {
+            "name": "ORACLE SQL",
+            "level": "Intermediate"
+        }
+    ]
+}
