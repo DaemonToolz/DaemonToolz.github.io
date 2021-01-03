@@ -1,0 +1,35 @@
+<mat-card>
+    <mat-card-header>
+        <mat-card-title>
+           <h1>Skills</h1>
+        </mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+        <mat-expansion-panel class="headers-align" hideToggle *ngFor="let section of skill_set">
+            <mat-expansion-panel-header>
+                <mat-panel-title>
+                    <h2 [innerHTML]="translateSkillSection(section.section)"> </h2>
+                </mat-panel-title>
+                <mat-panel-description>
+                    <span fxHide.lt-sm  [innerHTML]="translateSectionDesc(section.section)"></span>
+                    <span fxHide fxShow.lt-sm></span>
+                    <mat-icon> {{section.icon}} </mat-icon>
+                </mat-panel-description>
+            </mat-expansion-panel-header>
+            <div *ngFor="let skill of section.content">
+                <div fxFlex fxLayout fxLayoutAlign="left center">
+                    <div fxFlex="20" fxFlex.md="25" fxFlex.lt-sm="60">
+                        <h3 [innerHTML]="skill.name"></h3>
+                    </div>
+                    <div  fxFlex="70" fxFlex.md="55" fxFlex.lt-sm="40" fxLayoutAlign="center center">
+                        <mat-progress-bar [ngClass]="skill.level" [value]="SkillLevels[skill.level]"></mat-progress-bar>
+                    </div>
+                    <div fxFlex="10" fxFlex.lt-sm="15" fxLayoutAlign="right right">
+                        <span [innerHTML]="translateSkillLevel(skill.level)"></span>
+                    </div>
+
+                </div>
+            </div>
+        </mat-expansion-panel>
+    </mat-card-content>
+</mat-card>

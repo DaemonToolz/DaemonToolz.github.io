@@ -1,0 +1,41 @@
+[
+    {
+        "school":"CESI",
+        "location":"Arras, France",
+        "from": 2015,
+        "to" :2018,
+        "diploma": "EngineeringDegree",
+        "score": "N/A",
+        "specialization": "SoftwareEngineering",
+        "achievements": [
+            {"date":2017, "name": "TOEIC", "score":900}
+        ],
+        "courses": [
+
+        ]
+    },
+    {
+        "school":"IUT de Lens",
+        "location":"Lens, France",
+        "from": 2013,
+        "to" :2015,
+        "diploma": "AssociatesDegree",
+        "score": "N/A",
+        "specialization": "SoftwareDevelopment",
+        "achievements": [],
+        "courses": [
+        ]
+    },
+    {
+        "school":"Lycée Voltaire",
+        "location":"Wingles, France",
+        "from": 2010,
+        "to" :2013,
+        "diploma": "BaccalaureateDegree",
+        "score": "N/A",
+        "specialization": "IT",
+        "achievements": [],
+        "courses": [
+        ]
+    }
+]

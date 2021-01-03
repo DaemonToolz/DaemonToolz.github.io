@@ -1,0 +1,37 @@
+{
+    "main.title.key":"Axel MACIEJEWSKI",
+    "about.title.key": "Qui suis-je",
+    "skills.title.key": "Compétences",
+    "experience.title.key": "Expérience",
+    "studies.title.key": "Études",
+    "languages.title.key": "Langues",
+    "gallery.title.key": "Gallerie",
+    "contacts.title.key": "Contacts",
+
+    "skill.section.programming.key": "Développement",
+    "skill.section.frameworks.key": "Frameworks",
+    "skill.section.database.key": "Bases de Données",
+    "skill.section.networking.key": "Web",
+    "skill.section.videostreaming.key": "Streaming Vidéo",
+    "skill.section.architecture.key": "Architecture",
+    "skill.section.security.key": "Sécurité",
+    "skill.section.softwares.key": "Logiciels",
+    "skill.section.operatingsystem.key": "Systèmes",
+    "skill.section.testing.key": "Tests",
+
+    "skill.section.programming.description": "Langages de Développement",
+    "skill.section.frameworks.description": "Frameworks & bibliothèques",
+    "skill.section.database.description": "Bases de données ",
+    "skill.section.networking.description": "Technologies Web",
+    "skill.section.videostreaming.description": "Rediffusion vidéo",
+    "skill.section.architecture.description": "Technologies Cloud ",
+    "skill.section.security.description": "Concepts et outils de cybersécurité",
+    "skill.section.softwares.description": "Logiciels que j'utilise",
+    "skill.section.operatingsystem.description": "OS que je connais",
+    "skill.section.testing.description": "Outils & méthodes de tests",
+
+
+    "skill.level.advanced.key": "Avancé",
+    "skill.level.intermediate.key": "Intermédiaire",
+    "skill.level.beginner.key":"Débutant"
+}

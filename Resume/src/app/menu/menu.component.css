@@ -1,0 +1,10 @@
+.centerized{
+    text-align: center;
+}
+
+
+.title-bar{
+    position: sticky;
+    top: 0; 
+    z-index: 1000; 
+}

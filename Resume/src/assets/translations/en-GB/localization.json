@@ -1,0 +1,36 @@
+{
+    "main.title.key":"Axel MACIEJEWSKI",
+    "about.title.key": "About",
+    "skills.title.key": "Skills",
+    "experience.title.key": "Experience",
+    "studies.title.key": "Studies",
+    "languages.title.key": "Languages",
+    "gallery.title.key": "Gallery",
+    "contacts.title.key": "Contacts",
+
+    "skill.section.programming.key": "Programming",
+    "skill.section.frameworks.key": "Frameworks",
+    "skill.section.database.key": "Database",
+    "skill.section.networking.key": "Web",
+    "skill.section.videostreaming.key": "Videostreaming",
+    "skill.section.architecture.key": "Architecture",
+    "skill.section.security.key": "Security",
+    "skill.section.softwares.key": "Softwares",
+    "skill.section.operatingsystem.key": "Systems",
+    "skill.section.testing.key": "Testing",
+
+    "skill.section.programming.description": "Languages I know",
+    "skill.section.frameworks.description": "Frameworks and libraries",
+    "skill.section.database.description": "Database technologies",
+    "skill.section.networking.description": "Web & Networking technologies",
+    "skill.section.videostreaming.description": "Streaming technologies",
+    "skill.section.architecture.description": "Architecture & cloud technologies",
+    "skill.section.security.description": "Security concepts & tools",
+    "skill.section.softwares.description": "Softwares I use",
+    "skill.section.operatingsystem.description": "Operating Systems I use",
+    "skill.section.testing.description": "Test tools & methodology",
+
+    "skill.level.advanced.key": "Advanced",
+    "skill.level.intermediate.key": "Intermediate",
+    "skill.level.beginner.key":"Beginner"
+}

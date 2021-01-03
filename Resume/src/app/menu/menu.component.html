@@ -1,0 +1,101 @@
+<title>{{translator.translations['main.title.key']}}</title>
+<mat-toolbar color="primary" class="title-bar">
+    <mat-toolbar-row>
+      <div fxShow="true"  fxFlex fxLayout fxLayoutAlign="left center" >
+        <div fxFlex>
+          <a mat-button routerLink="/home"> 
+            <h3 [innerHTML]="translator.translations['main.title.key']">  </h3>
+          </a>
+        </div>  
+        
+        <div fxLayout fxHide.xs fxHide.sm fxFlex fxLayoutAlign="left center">
+            <a mat-button routerLink="/about"> 
+                <span [innerHTML]="translator.translations['about.title.key']"></span>
+              </a>
+    
+              <a mat-button routerLink="/skills"> 
+                <span [innerHTML]="translator.translations['skills.title.key']"></span>
+              </a>
+    
+              <a mat-button routerLink="/experience"> 
+                <span [innerHTML]="translator.translations['experience.title.key']"></span>
+              </a>
+    
+              <a mat-button routerLink="/studies"> 
+                <span [innerHTML]="translator.translations['studies.title.key']"></span>
+              </a>
+    
+              <a mat-button routerLink="/languages"> 
+                <span [innerHTML]="translator.translations['languages.title.key']"></span>
+              </a>
+              
+              <a mat-button routerLink="/languages"> 
+                <span [innerHTML]="translator.translations['gallery.title.key']"></span>
+              </a>
+
+              <a mat-button routerLink="/contacts"> 
+                <span [innerHTML]="translator.translations['contacts.title.key']"></span>
+              </a>
+        </div>
+
+        <div fxShow="false" fxShow.xs fxShow.sm  fxFlex  fxLayoutAlign="flex-end center" >
+          <button mat-button [matMenuTriggerFor]="menu">
+            <span>
+              Menu
+            </span>
+            <mat-icon>arrow_drop_down</mat-icon>
+          </button>
+        </div>  
+  
+        <div fxHide.xs fxHide.sm fxFlex  fxLayoutAlign="flex-end center" >
+          <button mat-button [matMenuTriggerFor]="languages"> 
+            <span [innerHTML]="getEnumKeyByEnumValue(TranslationLanguage,translator.selected_lang)"></span>
+            <mat-icon>arrow_drop_down</mat-icon>
+          </button>
+        </div>  
+      </div>
+    </mat-toolbar-row>
+  </mat-toolbar> 
+  
+  <mat-menu #menu="matMenu">
+    <a mat-menu-item routerLink="/about"> 
+        <mat-icon>perm_identity</mat-icon>
+        <span [innerHTML]="translator.translations['about.title.key']"></span>
+      </a>
+      <a mat-menu-item routerLink="/skills"> 
+        <mat-icon>military_tech</mat-icon>
+        <span [innerHTML]="translator.translations['skills.title.key']"></span>
+      </a>
+      <a mat-menu-item routerLink="/experience"> 
+        <mat-icon>history</mat-icon>
+        <span [innerHTML]="translator.translations['experience.title.key']"></span>
+      </a>
+      <a mat-menu-item routerLink="/studies"> 
+        <mat-icon>history_edu</mat-icon>
+        <span [innerHTML]="translator.translations['studies.title.key']"></span>
+      </a>
+      <a mat-menu-item routerLink="/languages"> 
+        <mat-icon>translate</mat-icon>
+        <span [innerHTML]="translator.translations['languages.title.key']"></span>
+      </a>
+      <a mat-menu-item routerLink="/gallery"> 
+        <mat-icon>collections</mat-icon>
+        <span [innerHTML]="translator.translations['gallery.title.key']"></span>
+      </a>
+      <a mat-menu-item routerLink="/contacts"> 
+        <mat-icon>contacts</mat-icon>
+        <span [innerHTML]="translator.translations['contacts.title.key']"></span>
+      </a>
+
+      <button mat-menu-item [matMenuTriggerFor]="languages">
+        <mat-icon>subtitles</mat-icon>
+        <span [innerHTML]="getEnumKeyByEnumValue(TranslationLanguage,translator.selected_lang)"></span>
+       
+      </button>
+  
+  </mat-menu>
+  
+  <mat-menu #languages="matMenu">
+    <button mat-menu-item *ngFor="let data of TranslationLanguage | keyvalue" (click)="switchTo(data['key'])" [innerHTML]="data['key']"></button>
+  </mat-menu>
+  
