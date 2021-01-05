@@ -1,40 +1,265 @@
-{
-    "skills":[
-        {
-            "name": "C#",
-            "level": "Advanced"
-        }, 
-        {
-            "name": "ASP.NET",
-            "level": "Advanced"
-        },
-        {
-            "name": "GO",
-            "level": "Advanced"
-        }, 
-        {
-            "name": "Angular 2+",
-            "level": "Advanced"
-        }, 
-        {
-            "name": "C/C++",
-            "level": "Intermediate"
-        }, 
-        {
-            "name": "Rust",
-            "level": "Beginner"
-        }, 
-        {
-            "name": "NoSQL",
-            "level": "Intermediate"
-        }, 
-        {
-            "name": "T-SQL",
-            "level": "Intermediate"
-        }, 
-        {
-            "name": "ORACLE SQL",
-            "level": "Intermediate"
-        }
-    ]
-}
+[
+    {
+        "section": "Programming",
+        "icon":"label",
+        "content": [
+            {
+                "name": "C#",
+                "level": "Advanced"
+            },  {
+                "name": "Python",
+                "level": "Advanced"
+            },
+            {
+                "name": "ASP.NET",
+                "level": "Advanced"
+            },
+            {
+                "name": "Golang",
+                "level": "Advanced"
+            },
+            {
+                "name": "Angular 2+",
+                "level": "Advanced"
+            }, 
+            {
+                "name": "Typescript & Javascript",
+                "level": "Advanced"
+            },
+            {
+                "name": "C/C++",
+                "level": "Intermediate"
+            },
+            {
+                "name": "JAVA",
+                "level": "Intermediate"
+            },
+            {
+                "name": "Rust",
+                "level": "Beginner"
+            }
+        ]
+    },
+    {
+        "section": "Frameworks",
+        "icon":"filter_frames",
+        "content": [
+            {
+                "name": "UWP",
+                "level": "Advanced"
+            },   
+            {
+                "name": "WPF",
+                "level": "Advanced"
+            },
+            {
+                "name": "WinForm",
+                "level": "Intermediate"
+            },
+            {
+                "name": "IdentityServer - OpenID",
+                "level": "Advanced"
+            },
+            {
+                "name": "Angular Material",
+                "level": "Advanced"
+            }
+        ]
+    },
+    {
+        "section": "Database",
+        "icon": "storage",
+        "content": [
+            {
+                "name": "SQL Server",
+                "level": "Advanced"
+            },
+            {
+                "name": "Oracle SQL",
+                "level": "Advanced"
+            },
+            {
+                "name": "DynamoDB",
+                "level": "Intermediate"
+            },
+            {
+                "name": "MongoDB",
+                "level": "Intermediate"
+            },
+            {
+                "name": "Neo4J",
+                "level": "Intermediate"
+            },
+            {
+                "name": "ArangoDB",
+                "level": "Intermediate"
+            }
+           
+        ]
+    },
+    
+    {
+        "section": "Networking",
+        "icon":"web",
+        "content": [
+            {
+                "name": "RabbitMQ",
+                "level": "Advanced"
+            },
+            {
+                "name": "ZeroMQ",
+                "level": "Advanced"
+            },
+            {
+                "name": "SignalR",
+                "level": "Advanced"
+            },
+            {
+                "name": "SocketIO",
+                "level": "Advanced"
+            },
+            {
+                "name": "WebSockets",
+                "level": "Intermediate"
+            }
+        ]
+    },
+    {
+        "section": "Videostreaming",
+        "icon":"ondemand_video",
+        "content": [
+            {
+                "name": "Gstreamer",
+                "level": "Intermediate"
+            },
+            {
+                "name": "FFMPEG",
+                "level": "Intermediate"
+            },
+            {
+                "name": "WebRTC",
+                "level": "Beginner"
+            },
+            {
+                "name": "Live555",
+                "level": "Beginner"
+            },
+            {
+                "name": "NGINX Media Server",
+                "level": "Beginner"
+            },
+            {
+                "name": "VNC",
+                "level": "Intermediate"
+            },
+            {
+                "name": "NoVNC",
+                "level": "Beginner"
+            }
+
+        ]
+    },
+    {
+        "section": "Architecture",
+        "icon":"architecture",
+        "content": [
+            {
+                "name": "Amazon Web Services",
+                "level": "Intermediate"
+            },
+            {
+                "name": "Azure",
+                "level": "Beginner"
+            },
+            
+            {
+                "name": "NGINX (Reverse) Proxy",
+                "level": "Beginner"
+            },
+            {
+                "name": "Docker",
+                "level": "Intermediate"
+            },
+            {
+                "name": "RedHat OpenShift",
+                "level": "Beginner"
+            }
+        ]
+    },
+    {
+        "section": "Security",
+        "icon":"security",
+        "content": [
+            {
+                "name": "OWASP",
+                "level": "Advanced"
+            }, 
+            {
+                "name": "SonarQube",
+                "level": "Advanced"
+            }, 
+            {
+                "name": "Codacy",
+                "level": "Advanced"
+            }, 
+            {
+                "name": "Dependancy Check",
+                "level": "Intermediate"
+            }
+        ]
+    },
+    {
+        "section": "Softwares",
+        "icon":"api",
+        "content": [
+            {
+                "name": "Visual Studio",
+                "level": "Advanced"
+            },
+            {
+                "name": "VS Code",
+                "level": "Advanced"
+            }
+        ]
+    },
+    {
+        "section": "Testing",
+        "icon":"science",
+        "content": [
+            {
+                "name": "Squash",
+                "level": "Advanced"
+            }
+        ]
+    },
+    {
+        "section": "OperatingSystem",
+        "icon":"devices_other",
+        "content": [
+            {
+                "name": "Windows",
+                "level": "Advanced"
+            },
+            {
+                "name": "Windows Server",
+                "level": "Advanced"
+            },
+            {
+                "name": "Windows 10 IOT",
+                "level": "Intermediate"
+            },
+            {
+                "name": "Android",
+                "level": "Intermediate"
+            },
+            {
+                "name": "Linux",
+                "level": "Intermediate"
+            },
+            {
+                "name": "Raspberry PI",
+                "level": "Intermediate"
+            }
+        ]
+    }
+]
