@@ -12,7 +12,7 @@ import { SkillLevels } from './models/levels';
 export class SkillsComponent implements OnInit {
   public SkillLevels = SkillLevels;
   public skill_set: Section[] = [];
-  constructor(private skills: SkillsReaderService, private translator : TranslationsService) {
+  constructor(private skills: SkillsReaderService, public translator : TranslationsService) {
     const self = this;
     skills.getJSON().subscribe(data => {
       self.skill_set = data;

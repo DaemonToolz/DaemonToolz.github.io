@@ -1,8 +1,12 @@
 ::ng-deep .mat-step-label{
-    width: 250px !important;
+    width: 275px !important;
   }
 
   h3 {
       padding : 0;
       margin: 0;
   }
+
+  mat-card{
+    margin:5px;
+}

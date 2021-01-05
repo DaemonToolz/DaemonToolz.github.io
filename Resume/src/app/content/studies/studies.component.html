@@ -1,7 +1,7 @@
 <mat-card>
     <mat-card-header>
         <mat-card-title>
-            <h1>Études</h1>
+            <h1 [innerHTML]="translator.translations['studies.title.key']"></h1>
         </mat-card-title>
     </mat-card-header>
     <mat-card-content>
@@ -18,11 +18,11 @@
                                 <span [innerHTML]="study.location"></span>
                             </div>
                             <div fxFlex="25">
-                                <h3 [innerHTML]="'From'"></h3>
+                                <h3 [innerHTML]="translator.translations['content.from.key']"></h3>
                                 <span [innerHTML]="study.from"></span>
                             </div>
                             <div fxFlex="25">
-                                <h3 [innerHTML]="'To'"></h3>
+                                <h3 [innerHTML]="translator.translations['content.to.key']"></h3>
                                 <span [innerHTML]="study.to"></span>
                             </div>
                         </div>
@@ -30,51 +30,50 @@
 
                     <div fxFlex fxLayout fxLayoutAlign="left center">
                         <div fxFlex="45">
-                            <h3> School </h3>
+                            <h3 [innerHTML]="translator.translations['studies.school.key']"> </h3>
                         </div>
                         <div fxFlex="45" fxLayout="column wrap">
                             <span [innerHTML]="study.school"></span>
                             <span [innerHTML]="study.location"></span>
-                            <span [innerHTML]="study.diploma"></span>
+                            <span [innerHTML]="translateStudySpecialization(study.diploma)"></span>
                         </div>
 
                     </div>
-                    <hr />
+                    <mat-divider></mat-divider>
                     <div fxFlex fxLayout fxLayoutAlign="left center">
                         <div fxFlex="45">
-                            <h3> Specialization </h3>
+                            <h3 [innerHTML]="translator.translations['studies.specialization.key']"> </h3>
                         </div>
                         <div fxFlex="45">
-                            <span [innerHTML]="study.specialization"></span>
+                            <span [innerHTML]="translateStudySpecialization(study.specialization)"></span>
                         </div>
                     </div>
-                    <hr />
+                    <mat-divider></mat-divider>
                     <div fxFlex fxLayout fxLayoutAlign="left center">
                         <div fxFlex="45">
-                            <h3> Achievements </h3>
+                            <h3 [innerHTML]="translator.translations['studies.achievements.key']"> </h3>
                         </div>
                         <div fxFlex="45">
                             <div *ngFor="let ach of study.achievements" fxLayout="column wrap" >
                                 <div fxFlex fxLayout fxLayoutAlign="left center">
-                                    <h3 fxFlex="50"> Name </h3>
-                                    <span fxFlex="50" [innerHTML]="ach.name"></span>
+                                    <h3 fxFlex="50" [innerHTML]="ach.name"></h3>
                                 </div>
 
                                 <div fxFlex fxLayout fxLayoutAlign="left center">
-                                    <h3 fxFlex="50"> Date </h3>
+                                    <span fxFlex="50" [innerHTML]="translator.translations['content.date.key']"> </span>
                                     <span fxFlex="50" [innerHTML]="ach.date"></span>
                                 </div>
                                 <div fxFlex fxLayout fxLayoutAlign="left center">
-                                    <h3 fxFlex="50"> Score </h3>
+                                    <span fxFlex="50" [innerHTML]="translator.translations['content.score.key']"> </span>
                                     <span fxFlex="50" [innerHTML]="ach.score"></span>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <hr />
+                    <mat-divider></mat-divider>
                     <div fxFlex fxLayout fxLayoutAlign="left center">
                         <div fxFlex="50">
-                            <h3> Courses </h3>
+                            <h3 [innerHTML]="translator.translations['studies.courses.key']"> </h3>
                         </div>
                         <div fxFlex="50">
                             <mat-list>
@@ -89,15 +88,5 @@
             </mat-vertical-stepper>
 
         </div>
-    </mat-card-content>
-</mat-card>
-
-<mat-card>
-    <mat-card-header>
-        <mat-card-title>
-            <h1>Projets personnels</h1>
-        </mat-card-title>
-    </mat-card-header>
-    <mat-card-content>
     </mat-card-content>
 </mat-card>

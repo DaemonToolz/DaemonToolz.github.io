@@ -201,6 +201,10 @@
             {
                 "name": "Codacy",
                 "level": "Advanced"
+            }, 
+            {
+                "name": "Dependancy Check",
+                "level": "Intermediate"
             }
         ]
     },

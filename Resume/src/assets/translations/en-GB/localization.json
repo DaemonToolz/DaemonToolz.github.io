@@ -8,6 +8,7 @@
     "gallery.title.key": "Gallery",
     "contacts.title.key": "Contacts",
 
+
     "skill.section.programming.key": "Programming",
     "skill.section.frameworks.key": "Frameworks",
     "skill.section.database.key": "Database",
@@ -29,8 +30,46 @@
     "skill.section.softwares.description": "Softwares I use",
     "skill.section.operatingsystem.description": "Operating Systems I use",
     "skill.section.testing.description": "Test tools & methodology",
+   
 
     "skill.level.advanced.key": "Advanced",
     "skill.level.intermediate.key": "Intermediate",
-    "skill.level.beginner.key":"Beginner"
+    "skill.level.beginner.key":"Beginner",
+
+    "studies.specialization.engineeringdegree.description": "Engineering Degree",
+    "studies.specialization.softwareengineering.description": "Software Engineering",
+    "studies.specialization.associatesdegree.description": "Higher National Diploma / Technology Degree",
+    "studies.specialization.softwaredevelopment.description": "Software Development",
+    "studies.specialization.baccalaureatedegree.description": "Baccalaureate",
+    "studies.specialization.sciit.description": "Science / IT",
+
+    "studies.school.key": "School",
+    "studies.specialization.key": "Specialization",
+    "studies.achievements.key": "Achievements",
+    "studies.courses.key": "Courses",
+    "experience.projects.key": "Personal Projects",
+    
+    "content.from.key":"From",
+    "content.to.key":"To",
+    "content.name.key":"Name",
+    "content.date.key":"Date",
+    "content.score.key":"Score",
+    "content.role.key":"Role",
+    "content.customers.key":"Customers",
+    "content.companylink.key":"Company website",
+
+    "experience.type.maincompany.key":"Employer",
+    "experience.type.customercompany.key":"Customer",
+    "experience.role.softwareengineer.key":"Software Engineer",
+    "experience.role.serviceprovider.key":"Service Provider",
+    "experience.role.softwareengineerintern.key":"Software Engineer Intern",
+    "experience.role.softwaredeveloperintern.key":"Software Developer Intern",
+    
+    "experience.thales.job.description":"",
+    "experience.eurotunnel.job.description":"Software Engineer",
+    "experience.thales.internship.description":"Mission: Upgrades and Improvements of the SCOP Project (Secured Connected Object Platform). SCOP is a web platform designed to automatize security audits. It's primary objective is to reduce an auditor's time spent on the security audit. This help goes through the creation of dockerized tools, the possibility to, via an API, manage scans, and finally via creating a report dynamically.",
+    "experience.avira.internship.description":"Software Engineer",
+    "experience.open.internship.description":"Software Engineer",
+    "experience.dower.internship.description":"Software Engineer"
+    
 }

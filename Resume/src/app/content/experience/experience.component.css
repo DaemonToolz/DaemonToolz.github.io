@@ -1,0 +1,33 @@
+.medium-icon{
+    width:75px;
+    height:75px;
+}
+
+.logo{
+    width:150px;
+    height:150px;
+}
+
+
+::ng-deep.mat-tab-label, ::ng-deep.mat-tab-label-active{
+    height:150px !important;
+   }
+
+h3{
+    margin:0;
+    padding:0;
+}
+
+.positionType{
+    font-size: 48px;
+}
+
+.thumbnail{
+    width:75px;
+    height:75px;
+}
+
+div{
+    margin:2px;
+    padding:2px;
+}

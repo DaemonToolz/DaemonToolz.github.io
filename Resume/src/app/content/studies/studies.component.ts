@@ -11,7 +11,7 @@ import { TranslationsService } from 'src/app/services/translations.service';
 export class StudiesComponent implements OnInit {
   public studies: Study[] = [];
   
-  constructor(private studyService: StudiesReaderService, private translator : TranslationsService) {
+  constructor(private studyService: StudiesReaderService, public translator : TranslationsService) {
     const self = this;
     studyService.getJSON().subscribe(data => {
       self.studies = data;
@@ -19,6 +19,9 @@ export class StudiesComponent implements OnInit {
 
    }
 
+   public translateStudySpecialization(category: string): string{
+    return this.translator.translations[`studies.specialization.${category.toLowerCase()}.description`] ?? category
+  }
 
   ngOnInit(): void {
   }

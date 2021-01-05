@@ -1,1 +1,114 @@
-<p>experience works!</p>
+<mat-card>
+    <mat-card-header>
+        <mat-card-title>
+            <h1 [innerHTML]="translator.translations['experience.title.key']"></h1>
+        </mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+
+        <mat-tab-group  mat-stretch-tabs class="mat-elevation-z4">
+
+            <mat-tab *ngFor="let exp of experiences">
+                <ng-template mat-tab-label>
+                    <mat-card class="mat-elevation-z0">
+                        <mat-card-header>
+
+                            <mat-icon mat-card-avatar class="medium-icon" [svgIcon]="exp.company.toLowerCase()">
+                            </mat-icon>
+                            <mat-card-title>
+                                <h2 [innerHTML]="exp.company"></h2>
+                            </mat-card-title>
+                            <mat-card-subtitle>
+                                <div>
+                                    <h3 [innerHTML]="translateCompanyType(exp.type)"></h3>
+                                </div>
+                            </mat-card-subtitle>
+                        </mat-card-header>
+                    </mat-card>
+                </ng-template>
+                <div fxFlex fxLayout fxLayoutAlign="center center">
+                    <mat-icon mat-card-avatar class="logo" [svgIcon]="exp.company.toLowerCase()"></mat-icon>
+                </div>
+                <div fxFlex fxLayout fxLayoutAlign="center center">
+                    <h2 [innerHTML]="exp.company"></h2>
+                </div>
+                <mat-divider></mat-divider>
+                <div *ngIf="exp.website !== null" fxFlex fxLayout fxLayoutAlign="center center">
+                    <a mat-button [href]="exp.website">
+                        <span [innerHTML]="translator.translations['content.companylink.key']"></span>
+                        <mat-icon>launch</mat-icon>
+                    </a>
+                </div>
+                <mat-divider></mat-divider>
+                <div *ngIf="exp.type === CompanyType.Customer" fxFlex fxLayout="row wrap" fxLayoutAlign="center center">
+                    <div fxFlex>
+                        <mat-icon class="thumbnail" [svgIcon]="exp.employer.toLowerCase()"></mat-icon>
+                    </div>
+                    <div fxFlex>
+                        <h3 [innerHTML]="exp.employer"></h3>
+                        <span [innerHTML]="translator.translations['experience.type.maincompany.key']"></span>
+                    </div>
+                </div>
+                <div fxFlex fxLayout="row wrap" fxLayoutAlign="center center">
+                    <div fxFlex.gt-xs="40" fxFlex.xs="100">
+                        <h3 [innerHTML]="translator.translations['content.role.key']"></h3>
+                        <span [innerHTML]="translateRole(exp.role)"></span>
+                    </div>
+                    <div fxFlex.gt-xs="25" fxFlex.xs="40">
+                        <h3 [innerHTML]="translator.translations['content.from.key']"></h3>
+                        <span [innerHTML]="exp.from | date:'LL/yyyy'"></span>
+                    </div>
+                    <div fxFlex.gt-xs="25" fxFlex.xs="40" *ngIf="exp.to !== null">
+                        <h3 [innerHTML]="translator.translations['content.to.key']"></h3>
+                        <span [innerHTML]="exp.to | date:'LL/yyyy'"></span>
+                    </div>
+                </div>
+                <mat-divider></mat-divider>
+                <div *ngIf="exp.customers != undefined && exp.customers.length > 0" fxFlex fxLayout="row wrap" fxLayoutAlign="center center">
+                    <h2 [innerHTML]="translator.translations['content.customers.key']"></h2>
+                </div>
+                <mat-tab-group *ngIf="exp.customers != undefined && exp.customers.length>0" mat-stretch-tabs class="mat-elevation-z4">
+                    <mat-tab *ngFor="let customer of exp.customers">
+                        <ng-template mat-tab-label>
+                            <div fxFlex fxLayout="column wrap" fxLayoutAlign="center center">
+                                <div fxFlex>
+                                    <mat-icon mat-card-avatar class="thumbnail" [svgIcon]="customer.toLowerCase()">
+                                    </mat-icon>
+                                </div>
+                                <div fxFlex>
+                                    <span [innerHTML]="customer"></span>
+                                </div>
+                            </div>
+                        </ng-template>
+                    </mat-tab>
+                </mat-tab-group>
+                <mat-divider></mat-divider>
+                <div fxFlex fxLayout="row wrap" fxLayoutAlign="left center">
+                    <div fxFlex="60">
+                        <p [innerHTML]="translator.translations[exp.description]"></p>
+
+                    </div>
+                    <mat-divider vertical style="height:150px;"></mat-divider>
+                    <div fxFlex.gt="25" fxFlex fxLayout="row wrap" fxLayoutAlign="left center">
+                        <mat-chip-list>
+                            <mat-chip *ngFor="let tech of exp.technologies">{{tech}}</mat-chip>
+                        </mat-chip-list>
+                    </div>
+
+                </div>
+            </mat-tab>
+        </mat-tab-group>
+
+
+    </mat-card-content>
+</mat-card>
+
+<mat-card>
+    <mat-card-header>
+        <mat-card-title>
+            <h1 [innerHTML]="translator.translations['experience.projects.key']"></h1>
+        </mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+    </mat-card-content>
+</mat-card>

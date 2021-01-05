@@ -33,5 +33,42 @@
 
     "skill.level.advanced.key": "Avancé",
     "skill.level.intermediate.key": "Intermédiaire",
-    "skill.level.beginner.key":"Débutant"
+    "skill.level.beginner.key":"Débutant",
+
+    
+    "studies.specialization.engineeringdegree.description": "Diplôme d'Ingénieur",
+    "studies.specialization.softwareengineering.description": "Ingénieurie Logicielle",
+    "studies.specialization.associatesdegree.description": "DUT Informatique",
+    "studies.specialization.softwaredevelopment.description": "Développement Logiciel",
+    "studies.specialization.baccalaureatedegree.description": "Baccalauréat",
+    "studies.specialization.sciit.description": "Science / Informatique",
+
+    "studies.school.key": "École",
+    "studies.specialization.key": "Spécialité",
+    "studies.achievements.key": "Réussites",
+    "studies.courses.key": "Cours",
+    "experience.projects.key": "Projets Personnels",
+    
+    "content.from.key":"De",
+    "content.to.key":"À",
+    "content.name.key":"Nom",
+    "content.date.key":"Date",
+    "content.score.key":"Résultat",
+    "content.role.key":"Rôle",
+    "content.customers.key":"Clients",
+    "content.companylink.key":"Site internet de l'entreprise",
+
+    "experience.type.maincompany.key":"Employeur",
+    "experience.type.customercompany.key":"Client",
+    "experience.role.softwareengineer.key":"Ingénieur Logiciel",
+    "experience.role.serviceprovider.key":"Prestataire",
+    "experience.role.softwareengineerintern.key":"Stagiaire Ingénieur",
+    "experience.role.softwaredeveloperintern.key":"Stagiaire Développeur",
+    
+    "experience.thales.job.description":"",
+    "experience.eurotunnel.job.description":"Software Engineer",
+    "experience.thales.internship.description":"Mission: Amélioration et Maintenance du projet SCOP (Secured Connected Object Platform). SCOP est une plateforme d'automatisation d'audits de sécurité. Ce projet web a, essentiellement, pour but d'aider les auditeurs à gagner du temps au cours de leurs audits de sécurité, en automatisation la création d'outils d'analyse, en gérant les analyses, puis en offrant la possibilité de générer des rapports de façon dynamique et fiable.",
+    "experience.avira.internship.description":"Software Engineer",
+    "experience.open.internship.description":"Software Engineer",
+    "experience.dower.internship.description":"Software Engineer"
 }

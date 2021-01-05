@@ -15,6 +15,9 @@ import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { MatStepperModule } from '@angular/material/stepper';
+import { MatTabsModule } from '@angular/material/tabs';
+import { MatDividerModule } from '@angular/material/divider';
+import { MatChipsModule } from '@angular/material/chips';
 
 import { MatCardModule } from '@angular/material/card';
 import { MenuComponent } from './menu/menu.component';
@@ -47,6 +50,9 @@ import { HttpClientModule } from '@angular/common/http';
   imports: [
     BrowserModule,
     MatProgressBarModule,
+    MatChipsModule,
+    MatTabsModule,
+    MatDividerModule,
     MatProgressSpinnerModule,
     AppRoutingModule,
     BrowserAnimationsModule,
