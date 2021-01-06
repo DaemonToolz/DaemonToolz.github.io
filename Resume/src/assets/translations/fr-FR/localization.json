@@ -7,6 +7,15 @@
     "languages.title.key": "Langues",
     "gallery.title.key": "Gallerie",
     "contacts.title.key": "Contacts",
+    "homepage.title.key":"Page d'accueil",
+
+    "about.title.description":"Un descriptif court sur qui je suis",
+    "skills.title.description":"Ce que je connais",
+    "experience.title.description":"Mes expériences professionnelles et personnes",
+    "studies.title.description":"Mes études et certifications",
+    "languages.title.description":"Les langues que connais ou que j'étudie",
+    "gallery.title.description":"Logiciels et réussites",
+    "contacts.title.description":"Me contacter",
 
     "skill.section.programming.key": "Développement",
     "skill.section.frameworks.key": "Frameworks",
@@ -66,9 +75,20 @@
     "experience.role.softwaredeveloperintern.key":"Stagiaire Développeur",
     
     "experience.thales.job.description":"",
-    "experience.eurotunnel.job.description":"Software Engineer",
+    "experience.eurotunnel.job.description":"Prestation de service dans le cadre d'une TMA des Voies de Péage Eurotunnel. Maintient et amélioration du SI - avec des applications et processus existant depuis ~20 ans. Interaction et coordinateur avec différents acteurs - Architectes, opérateurs, autres équipes interne à Eurotunnel. Maintient des flux réseaux entre les différents environnements (matrices de flux, demandes d'ouvertures). Pratique de l'IVVQ - relecture et application de cas de tests SQUASH, et intégration d'outils qualimétriques (SONAR). Gestion du matériel client (équipement de test / simulations de voies de péage) et gestion de drivers applicatifs. Pratique de l'UX et propositions d'améliorations suivant les processus UX (partiellement). Proposition d'architecture et orientation de l'architecture vers un mo²dèle Microservices / Dockerisé. ",
     "experience.thales.internship.description":"Mission: Amélioration et Maintenance du projet SCOP (Secured Connected Object Platform). SCOP est une plateforme d'automatisation d'audits de sécurité. Ce projet web a, essentiellement, pour but d'aider les auditeurs à gagner du temps au cours de leurs audits de sécurité, en automatisation la création d'outils d'analyse, en gérant les analyses, puis en offrant la possibilité de générer des rapports de façon dynamique et fiable.",
-    "experience.avira.internship.description":"Software Engineer",
-    "experience.open.internship.description":"Software Engineer",
-    "experience.dower.internship.description":"Software Engineer"
+    "experience.avira.internship.description":"Prototypage & Software engineering autour de l'application Avira SpeedUp, afin d'y donner un aspect orienté vers la communauté. Durant cette période, j'ai eu l'occasion de travailler sur des technologies diverses et variées avec une infrastructure cliente / serveur. J'ai interagit avec divers experts appartement à d'autres départements (Cloud, Scriptings, ...)",
+    "experience.open.internship.description":"Mise à jour d'un outil interne - TEAMBOX - qui est un outil de management de projet, pour permettre un suivi tant interne (pointage) que sur l'avancement global du projet.",
+    "experience.dower.internship.description":"Maintenance d'une application Android - avec serveur FTP / PHP. Mise en place d'une application Android - avec serveur FTP / PHP. Mise en place de prototype - PHP / SQLite et rédaction de Scripts PowerShell - serveur Active Directory / Windows Server 2012.",
+
+    "languages.level.native.key":"Natif",
+    "languages.level.fluent.key":"Courant",
+    "languages.level.intermediate.key":"Intermédiaire",
+    "languages.level.beginner.key":"Débutant",
+
+    "languages.fr.key":"Français",
+    "languages.en.key":"Anglais",
+    "languages.de.key":"Allemand",
+    "languages.ja.key":"Japonais",
+    "languages.th.key":"Thaï"
 }

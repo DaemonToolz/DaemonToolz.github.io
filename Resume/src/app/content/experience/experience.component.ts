@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { MatTabGroup } from '@angular/material/tabs';
 import { CompanyType, Experience } from 'src/app/models/experience';
 import { ExperienceService } from 'src/app/services/experience.service';
 import { TranslationsService } from 'src/app/services/translations.service';
@@ -9,7 +10,7 @@ import { TranslationsService } from 'src/app/services/translations.service';
   styleUrls: ['./experience.component.css']
 })
 export class ExperienceComponent implements OnInit {
-
+  @ViewChild('ExperienceTabs', {static: false}) public tabGroup: MatTabGroup;
   public CompanyType = CompanyType;
   public experiences: Experience[] = [];
   constructor(private experienceService: ExperienceService, public translator: TranslationsService) {

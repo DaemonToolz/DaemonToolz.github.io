@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Language, LanguageLevel } from 'src/app/models/languages';
+import { LanguagesService } from 'src/app/services/languages.service';
+import { TranslationsService } from 'src/app/services/translations.service';
 
 @Component({
   selector: 'app-languages',
@@ -7,7 +10,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LanguagesComponent implements OnInit {
 
-  constructor() { }
+  public LanguageLevel = LanguageLevel;
+  public languages: Language[] = [];
+  constructor(private langService: LanguagesService, public translator: TranslationsService) {
+    const self = this;
+    langService.getJSON().subscribe(data => {
+      self.languages = data;
+    });
+  }
 
   ngOnInit(): void {
   }

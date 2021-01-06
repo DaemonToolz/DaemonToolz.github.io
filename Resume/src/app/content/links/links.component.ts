@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { TranslationsService } from 'src/app/services/translations.service';
 
 @Component({
   selector: 'app-links',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LinksComponent implements OnInit {
 
-  constructor() { }
+  constructor( public translator: TranslationsService) { }
 
   ngOnInit(): void {
   }

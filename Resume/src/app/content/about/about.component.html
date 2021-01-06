@@ -1,7 +1,8 @@
 <mat-card>
     <mat-card-header>
         <mat-card-title>
-            <h2><strong> About </strong></h2>
+            <h1 [innerHTML]="translator.translations['about.title.key']">
+            </h1>
         </mat-card-title>
     </mat-card-header>
     <mat-card-content>

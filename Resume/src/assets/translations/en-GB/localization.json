@@ -7,8 +7,16 @@
     "languages.title.key": "Languages",
     "gallery.title.key": "Gallery",
     "contacts.title.key": "Contacts",
+    "homepage.title.key":"Homepage",
 
-
+    "about.title.description":"Short summary about who I am",
+    "skills.title.description":"What I know and can do",
+    "experience.title.description":"All my previous professional and personnal experience",
+    "studies.title.description":"All my studies and certifications",
+    "languages.title.description":"All the languages I know or study",
+    "gallery.title.description":"Softwares & achievements",
+    "contacts.title.description":"My contacts",
+    
     "skill.section.programming.key": "Programming",
     "skill.section.frameworks.key": "Frameworks",
     "skill.section.database.key": "Database",
@@ -66,10 +74,21 @@
     "experience.role.softwaredeveloperintern.key":"Software Developer Intern",
     
     "experience.thales.job.description":"",
-    "experience.eurotunnel.job.description":"Software Engineer",
+    "experience.eurotunnel.job.description":"Providing Services in the context of a Third Party Maintenance of Eurotunnel's Toll Plazas. Updating and improving the Information System - with 20 years-old softwares and processes. Interactions between several stakeholder / teams - architects, operators, other Eurotunnel's internal teams. Maintaining network flows between various environments (network flow matrix, ticketing). Practising IVVQ - reviewing and applicating SQUASH test cases, integration of Code Quality processes (SONAR). Hardware & equipment management (Test equipment & toll plaza simulation tools) and software drivers management. Practising UX & improvement proposals partially following UX processes. Architecture improvement proposals and orienting the architectures towards Microservice/Dockerized",
     "experience.thales.internship.description":"Mission: Upgrades and Improvements of the SCOP Project (Secured Connected Object Platform). SCOP is a web platform designed to automatize security audits. It's primary objective is to reduce an auditor's time spent on the security audit. This help goes through the creation of dockerized tools, the possibility to, via an API, manage scans, and finally via creating a report dynamically.",
-    "experience.avira.internship.description":"Software Engineer",
-    "experience.open.internship.description":"Software Engineer",
-    "experience.dower.internship.description":"Software Engineer"
+    "experience.avira.internship.description":"Prototyping and Software engineering around Avira SpeedUp, to get a community aspect. During my misson, I worked on several technologies, especially using a Client / Server infrastructure, and I interacted with experts from different departments (Cloud, Scripting, ...)",
+    "experience.open.internship.description":"Updating an internal tool - TEAMBOX - which allow you to manage projects. The goal of this J2EE - Web application is to check the overall advancement of a project and to know 'who did what'.",
+    "experience.dower.internship.description":"Updating an Android App linked to a PHP / FTP server. Create and write an Android App kinked to a PHP / FTP server. Designing a prototype in PHP. Using an Active Directory Server and applying a monitoring Script on it.",
     
+    "languages.level.native.key":"Native",
+    "languages.level.fluent.key":"Fluent",
+    "languages.level.intermediate.key":"Intermediate",
+    "languages.level.beginner.key":"Beginner",
+
+    "languages.fr.key":"French",
+    "languages.en.key":"English",
+    "languages.de.key":"German",
+    "languages.ja.key":"Japanese",
+    "languages.th.key":"Thai"
+
 }

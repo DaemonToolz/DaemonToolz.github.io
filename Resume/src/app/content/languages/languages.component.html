@@ -1,1 +1,17 @@
-<p>languages works!</p>
+<mat-card>
+    <mat-card-header>
+        <mat-card-title>
+            <h1 [innerHTML]="translator.translations['languages.title.key']">
+            </h1>
+        </mat-card-title>
+    </mat-card-header>
+</mat-card>
+
+<mat-card *ngFor="let lang of languages">
+    <mat-card-header>
+        <mat-card-title>
+            <h2 [innerHTML]="translator.translations[lang.name]">
+            </h2>
+        </mat-card-title>
+    </mat-card-header>
+</mat-card>

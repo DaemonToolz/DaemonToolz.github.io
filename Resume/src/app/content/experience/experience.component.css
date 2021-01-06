@@ -13,7 +13,7 @@
     height:150px !important;
    }
 
-h3{
+h3, h2{
     margin:0;
     padding:0;
 }
@@ -30,4 +30,28 @@ h3{
 div{
     margin:2px;
     padding:2px;
+}
+
+
+.maxHeight{
+    height:100%;
+}
+
+.logoAction{
+    height:150px;
+}
+
+
+.headers-align .mat-expansion-panel-header-title,
+.headers-align .mat-expansion-panel-header-description {
+  flex-basis: 0;
+}
+
+.headers-align .mat-expansion-panel-header-description {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.headers-align .mat-form-field + .mat-form-field {
+  margin-left: 8px;
 }

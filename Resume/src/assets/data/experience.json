@@ -13,32 +13,27 @@
             "Eurotunnel"
         ],
         "technologies":[
-            "C++",
-            "C#", 
-            "ASP.NET",
-            ".NET Core",
             "UWP",
-            "WinForm",
-            "WPF",
-            "WCF",
             "Angular 7+",
-            "Material",
-            "SignalR",
-            "RabbitMQ",
             "ZeroMQ",
             "Golang",
             "Python",
+            "SocketIO",
             "FFMPEG",
             "Gstreamer",
             "DASH",
             "WebRTC",
-            "Kubernetes",
-            "Docker",
             "NGINX",
-            "AWS", "Azure",
+            "AWS",
+            "Codacy",
             "OWASP","CWE",
             "W10 IoT Core",
-            "Parrot SDK"
+            "Raspian",
+            "Parrot SDK",
+            "SonarCloud",
+            "OpenShift",
+            "Kubernetes",
+            "Docker"
         ]
     },
     {
@@ -51,7 +46,26 @@
         "to":null,
 
         "description":"experience.eurotunnel.job.description",
-        "website":"https://www.eurotunnel.com/"
+        "website":"https://www.eurotunnel.com/",
+        "technologies":[
+            "C#", 
+            "ASP.NET",
+            ".NET Core",
+            "VSTS",
+            "Git",
+            "Octopus",
+            "Angular",
+            "C++",
+            "WinForm",
+            "WPF",
+            "WCF",
+            "SignalR",
+            "RabbitMQ",
+            "Azure",
+            "Material",
+            "AGILE Scrum",
+            "SonarQube"
+        ] 
     },
     
     {
@@ -91,7 +105,17 @@
         "to":"02-01-2017",
 
         "description":"experience.avira.internship.description",
-        "website":"https://www.avira.com/"
+        "website":"https://www.avira.com/",
+        "technologies":[
+            "C#",
+            "WPF",
+            "C/C++",
+            "C++ AMP / WARP",
+            "Python",
+            "AWS",
+            "JWT",
+            "Agile SCRUM"
+        ]
     },
     {
         "company":"OPEN",
@@ -103,7 +127,17 @@
         "to":"05-01-2016",
 
         "description": "experience.open.internship.description",
-        "website":"https://www.open.global/"
+        "website":"https://www.open.global/",
+        "technologies":[
+            "JAVA",
+            "Struts2",
+            "Hibernate",
+            "Maven",
+            "SVN",
+            "Eclipse MARS",
+            "MANTIS",
+            "Agile SCRUM"
+        ]
     },
     
     {
@@ -116,6 +150,14 @@
         "to":"06-01-2015",
 
         "description":"experience.dower.internship.description",
-        "website":null
+        "website":null,
+        "technologies":[
+            "PHP",
+            "FTP",
+            "Android",
+            "SQLite",
+            "PowerShell",
+            "Active Directory"
+        ]
     }
 ]

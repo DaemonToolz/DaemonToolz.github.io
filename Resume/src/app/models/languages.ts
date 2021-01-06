@@ -6,3 +6,19 @@ export enum TranslationLanguage {
     ไทย = "th-TH"
 }
 
+export enum LanguageLevel {
+    Native = 100,
+    Fluent = 75,
+    Intermediate = 50,
+    Beginner = 25
+}
+
+export class Language {
+    public name: string;
+    public writing_level: LanguageLevel;
+    public reading_level: LanguageLevel;
+    public speaking_level: LanguageLevel;
+    public listening_level: LanguageLevel;
+    public estimated_level: string;
+    
+}   

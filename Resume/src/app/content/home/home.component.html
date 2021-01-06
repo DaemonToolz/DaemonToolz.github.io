@@ -1,49 +1,45 @@
 <mat-card>
     <mat-card-header>
         <mat-card-title>
-            <h1>
-                <strong>Homepage</strong>
-            </h1>
+            <h1 [innerHTML]="translator.translations['homepage.title.key']"></h1>
         </mat-card-title>
     </mat-card-header>
     <mat-card-content>
-
-
         <mat-action-list>
             <mat-list-item routerLink="/about">
                 <mat-icon>perm_identity</mat-icon>
-                <h1 matLine> About</h1>
-                <span matLine> Short summary about who I am</span>
+                <h1 matLine [innerHTML]="translator.translations['about.title.key']"> </h1>
+                <span matLine [innerHTML]="translator.translations['about.title.description']"> </span>
             </mat-list-item>
             <mat-list-item routerLink="/skills">
-                <mat-icon>military_tech</mat-icon>
-                <h1 matLine> Skills</h1>
-                <span matLine> What I know and can do</span>
+                <mat-icon>biotech</mat-icon>
+                <h1 matLine [innerHTML]="translator.translations['skills.title.key']"> </h1>
+                <span matLine [innerHTML]="translator.translations['skills.title.description']"> </span>
             </mat-list-item>
             <mat-list-item routerLink="/experience">
-                <mat-icon>history</mat-icon>
-                <h1 matLine> Experience</h1>
-                <span matLine> All my previous professional and personnal experience</span>
+                <mat-icon>military_tech</mat-icon>
+                <h1 matLine [innerHTML]="translator.translations['experience.title.key']"> </h1>
+                <span matLine [innerHTML]="translator.translations['experience.title.description']"> </span>
             </mat-list-item>
             <mat-list-item routerLink="/studies">
                 <mat-icon>history_edu</mat-icon>
-                <h1 matLine> Studies</h1>
-                <span matLine> All my studies and certifications</span>
+                <h1 matLine [innerHTML]="translator.translations['studies.title.key']"> </h1>
+                <span matLine [innerHTML]="translator.translations['studies.title.description']"> </span>
             </mat-list-item>
             <mat-list-item routerLink="/languages">
                 <mat-icon>translate</mat-icon>
-                <h1 matLine> Languages</h1>
-                <span matLine> All the languages I know</span>
+                <h1 matLine [innerHTML]="translator.translations['languages.title.key']"> </h1>
+                <span matLine [innerHTML]="translator.translations['languages.title.description']"> </span>
             </mat-list-item>
             <mat-list-item routerLink="/gallery">
                 <mat-icon>collections</mat-icon>
-                <h1 matLine> Gallery</h1>
-                <span matLine> Softwares & achievements</span>
+                <h1 matLine [innerHTML]="translator.translations['gallery.title.key']"> </h1>
+                <span matLine [innerHTML]="translator.translations['gallery.title.description']"> </span>
             </mat-list-item>
             <mat-list-item routerLink="/contacts">
                 <mat-icon>contacts</mat-icon>
-                <h1 matLine> Contacts </h1>
-                <span matLine> Miscellaneous</span>
+                <h1 matLine [innerHTML]="translator.translations['contacts.title.key']"> </h1>
+                <span matLine [innerHTML]="translator.translations['contacts.title.description']"> </span>
             </mat-list-item>
         </mat-action-list>
 

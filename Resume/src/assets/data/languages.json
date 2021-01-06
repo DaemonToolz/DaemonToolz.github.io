@@ -1,3 +1,39 @@
 [
-    
+    {
+        "name":"languages.fr.key",
+        "writing_level":"100",
+        "reading_level":"100",
+        "speaking_level":"100",
+        "listening_level":"100"
+    },
+    {
+        "name":"languages.en.key",
+        "writing_level":"75",
+        "reading_level":"75",
+        "speaking_level":"75",
+        "listening_level":"75",
+        "estimated_level":"B2 / C1"
+    },
+    {
+        "name":"languages.de.key",
+        "writing_level":"25",
+        "reading_level":"50",
+        "speaking_level":"25",
+        "listening_level":"25"
+    },
+    {
+        "name":"languages.ja.key",
+        "writing_level":"25",
+        "reading_level":"50",
+        "speaking_level":"25",
+        "listening_level":"50",
+        "estimated_level":"JLPT N5 / N4"
+    },
+    {
+        "name":"languages.th.key",
+        "writing_level":"25",
+        "reading_level":"25",
+        "speaking_level":"25",
+        "listening_level":"25"
+    }
 ]
