@@ -20,5 +20,10 @@ export class Language {
     public speaking_level: LanguageLevel;
     public listening_level: LanguageLevel;
     public estimated_level: string;
+    public trend: string;
+    public reading_trend: string;
+    public writing_trend: string;
+    public speaking_trend: string;
+    public listening_trend: string;
     
-}   
+}    

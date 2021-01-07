@@ -90,5 +90,12 @@
     "languages.en.key":"Anglais",
     "languages.de.key":"Allemand",
     "languages.ja.key":"Japonais",
-    "languages.th.key":"Thaï"
+    "languages.th.key":"Thaï",
+
+
+    "languages.skill.writing.key":"Écrire",
+    "languages.skill.reading.key":"Lire",
+    "languages.skill.speaking.key":"Parler",
+    "languages.skill.listening.key":"Écouter"
+
 }

@@ -1,17 +1,95 @@
 <mat-card>
     <mat-card-header>
         <mat-card-title>
-            <h1 [innerHTML]="translator.translations['languages.title.key']">
-            </h1>
+            <h1 [innerHTML]="translator.translations['languages.title.key']"> </h1>
         </mat-card-title>
     </mat-card-header>
-</mat-card>
 
-<mat-card *ngFor="let lang of languages">
-    <mat-card-header>
-        <mat-card-title>
-            <h2 [innerHTML]="translator.translations[lang.name]">
-            </h2>
-        </mat-card-title>
-    </mat-card-header>
+    <mat-card-content>
+        <mat-expansion-panel class="headers-align" *ngFor="let lang of languages" class="headers-align" hideToggle>
+            <mat-expansion-panel-header>
+                <mat-panel-title>
+                    <h2 [innerHTML]="translateLanguage(lang.name)"></h2>
+                </mat-panel-title>
+                <mat-panel-description>
+                    <h3 [innerHTML]="translateLanguageLevel(defineClass(lang))"></h3>
+                    <mat-icon [ngClass]="[lang.trend,'larger']"> {{lang.trend}}</mat-icon>
+                </mat-panel-description>
+            </mat-expansion-panel-header>
+            <div class="secondarySize" fxFlex fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="50px">
+                <div fxFlex fxLayout="column wrap" fxLayoutAlign="center center">
+                    <div fxFlex class="container">
+                        <img class="mainLogo" [src]="getLanguageFlag(lang.name)" />
+                        <mat-progress-spinner [ngClass]="defineClass(lang)" mode="determinate"
+                            [value]="averageLevel(lang)" strokeWidth='10' diameter='150'></mat-progress-spinner>
+                    </div>
+                    <h3 fxFlex [innerHTML]="lang.estimated_level"></h3>
+                </div>
+
+                <div fxFlex fxLayout="row wrap" fxLayoutAlign="center center" fxLayoutGap="125px">
+                    <div fxFlex fxLayout="column wrap" fxLayoutAlign="center center" fxLayoutGap="50px">
+                        <div fxFlex fxLayout="column wrap" fxLayoutAlign="center center">
+                            <img class="secondarylogo" src="assets/images/hear.logo.png" />
+                            <mat-progress-spinner class="absolute" fxFlex="100%" fxFlexAlign="center"
+                                [ngClass]="defineClass(lang)" mode="determinate" [value]="averageLevel(lang)"
+                                strokeWidth='5' diameter='100'></mat-progress-spinner>
+                        </div>
+                        <div fxFlex fxLayout="column wrap" fxLayoutAlign="center center">
+                            <h3 fxHide.lt-md fxFlex [innerHTML]="translateLanguageLevelEnum(lang.listening_level)"></h3>
+                            <mat-icon fxFlex fxHide.lt-sm [ngClass]="[lang.listening_trend,'larger']">
+                                {{lang.listening_trend}}
+                            </mat-icon>
+                        </div>
+                    </div>
+
+                    <div fxFlex fxLayout="column wrap" fxLayoutAlign="center center" fxLayoutGap="50px">
+                        <div fxFlex fxLayout="column wrap" fxLayoutAlign="center center">
+                            <img class="secondarylogo" src="assets/images/write.logo.png" />
+                            <mat-progress-spinner class="absolute" fxFlex="100%" fxFlexAlign="center"
+                                [ngClass]="defineClass(lang)" mode="determinate" [value]="averageLevel(lang)"
+                                strokeWidth='5' diameter='100'></mat-progress-spinner>
+                        </div>
+                        <div fxFlex fxLayout="column wrap" fxLayoutAlign="center center">
+                            <h3 fxHide.lt-md fxFlex [innerHTML]="translateLanguageLevelEnum(lang.writing_level)"></h3>
+                            <mat-icon fxFlex fxHide.lt-sm [ngClass]="[lang.writing_trend,'larger']">
+                                {{lang.writing_trend}}
+                            </mat-icon>
+                        </div>
+                    </div>
+
+                    <div fxFlex fxLayout="column wrap" fxLayoutAlign="center center" fxLayoutGap="50px">
+                        <div fxFlex fxLayout="column wrap" fxLayoutAlign="center center">
+                            <img class="secondarylogo" src="assets/images/speak.logo.png" />
+                            <mat-progress-spinner class="absolute" fxFlex="100%" fxFlexAlign="center"
+                                [ngClass]="defineClass(lang)" mode="determinate" [value]="averageLevel(lang)"
+                                strokeWidth='5' diameter='100'></mat-progress-spinner>
+                        </div>
+                        <div fxFlex fxLayout="column wrap" fxLayoutAlign="center center">
+                            <h3 fxHide.lt-md fxFlex [innerHTML]="translateLanguageLevelEnum(lang.speaking_level)"></h3>
+                            <mat-icon fxFlex fxHide.lt-sm [ngClass]="[lang.speaking_trend,'larger']">
+                                {{lang.speaking_trend}}
+                            </mat-icon>
+                        </div>
+                    </div>
+                    <div fxFlex fxLayout="column wrap" fxLayoutAlign="center center" fxLayoutGap="50px">
+                        <div fxFlex fxLayout="column wrap" fxLayoutAlign="center center">
+                            <img class="secondarylogo" src="assets/images/read.logo.png" />
+                            <mat-progress-spinner class="absolute" fxFlex="100%" fxFlexAlign="center"
+                                [ngClass]="defineClass(lang)" mode="determinate" [value]="averageLevel(lang)"
+                                strokeWidth='5' diameter='100'>
+                            </mat-progress-spinner>
+                        </div>
+                        <div fxFlex fxLayout="column wrap" fxLayoutAlign="center center">
+                            <h3 fxHide.lt-md fxFlex [innerHTML]="translateLanguageLevelEnum(lang.reading_level)"></h3>
+                            <mat-icon fxFlex fxHide.lt-sm [ngClass]="[lang.reading_trend,'larger']">
+                                {{lang.reading_trend}}
+                            </mat-icon>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </mat-expansion-panel>
+    </mat-card-content>
 </mat-card>

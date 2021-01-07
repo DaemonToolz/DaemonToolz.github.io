@@ -1,3 +1,77 @@
 mat-card{
     margin:5px;
 }
+
+.mainLogo{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    position: absolute;    
+}
+
+.secondarylogo{
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    position:absolute
+}
+
+.secondarySize{
+    min-height:400px;
+}
+
+.absolute{
+    position:absolute
+}
+
+h2,h3{
+    margin:0px;
+    padding:0px;
+}
+
+
+.container {
+    display: inline-block;
+    position: relative;
+  }
+
+    .native.mat-progress-spinner::ng-deep circle, .mat-spinner circle {
+        stroke: #3fb53f !important;
+    }
+
+    .fluent.mat-progress-spinner::ng-deep circle, .mat-spinner circle {
+        stroke: darkgreen !important;
+    }
+
+    .intermediate.mat-progress-spinner::ng-deep circle, .mat-spinner circle {
+        stroke: orange !important;
+    }
+
+    .beginner.mat-progress-spinner::ng-deep circle, .mat-spinner circle {    
+        stroke: red !important;    
+    }
+
+    .headers-align .mat-expansion-panel-header-title,
+    .headers-align .mat-expansion-panel-header-description {
+      flex-basis: 0;
+    }
+    
+    .headers-align .mat-expansion-panel-header-description {
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    .headers-align .mat-form-field + .mat-form-field {
+      margin-left: 8px;
+    }
+
+    .trending_up{
+        color:green;
+    }
+    .trending_down{
+        color:red;
+    }
+
+    .larger{
+        font-size: 32px;
+    }
