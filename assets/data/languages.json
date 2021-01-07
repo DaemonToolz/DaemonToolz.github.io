@@ -1,39 +1,63 @@
 [
     {
-        "name":"languages.fr.key",
-        "writing_level":"100",
-        "reading_level":"100",
-        "speaking_level":"100",
-        "listening_level":"100"
+        "name":"fr",
+        "writing_level":100,
+        "reading_level":100,
+        "speaking_level":100,
+        "listening_level":100,
+        "trend":"trending_flat",
+        "writing_trend":"trending_flat",
+        "reading_trend":"trending_flat",
+        "speaking_trend":"trending_flat",
+        "listening_trend":"trending_flat"
     },
     {
-        "name":"languages.en.key",
-        "writing_level":"75",
-        "reading_level":"75",
-        "speaking_level":"75",
-        "listening_level":"75",
-        "estimated_level":"B2 / C1"
+        "name":"en",
+        "writing_level":75,
+        "reading_level":75,
+        "speaking_level":75,
+        "listening_level":75,
+        "estimated_level":"TOEIC > 900 (B2 / C1)",
+        "trend":"trending_up",
+        "writing_trend":"trending_up",
+        "reading_trend":"trending_up",
+        "speaking_trend":"trending_up",
+        "listening_trend":"trending_up"
     },
     {
-        "name":"languages.de.key",
-        "writing_level":"25",
-        "reading_level":"50",
-        "speaking_level":"25",
-        "listening_level":"25"
+        "name":"de",
+        "writing_level":25,
+        "reading_level":50,
+        "speaking_level":25,
+        "listening_level":25,
+        "trend":"trending_down",
+        "writing_trend":"trending_flat",
+        "reading_trend":"trending_down",
+        "speaking_trend":"trending_down",
+        "listening_trend":"trending_down"
     },
     {
-        "name":"languages.ja.key",
-        "writing_level":"25",
-        "reading_level":"50",
-        "speaking_level":"25",
-        "listening_level":"50",
-        "estimated_level":"JLPT N5 / N4"
+        "name":"ja",
+        "writing_level":25,
+        "reading_level":50,
+        "speaking_level":25,
+        "listening_level":50,
+        "trend":"trending_up",
+        "writing_trend":"trending_up",
+        "reading_trend":"trending_up",
+        "speaking_trend":"trending_flat",
+        "listening_trend":"trending_up"
     },
     {
-        "name":"languages.th.key",
-        "writing_level":"25",
-        "reading_level":"25",
-        "speaking_level":"25",
-        "listening_level":"25"
+        "name":"th",
+        "writing_level":25,
+        "reading_level":25,
+        "speaking_level":25,
+        "listening_level":25,
+        "trend":"trending_up",
+        "writing_trend":"trending_flat",
+        "reading_trend":"trending_flat",
+        "speaking_trend":"trending_up",
+        "listening_trend":"trending_up"
     }
 ]

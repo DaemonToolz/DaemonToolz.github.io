@@ -89,6 +89,12 @@
     "languages.en.key":"English",
     "languages.de.key":"German",
     "languages.ja.key":"Japanese",
-    "languages.th.key":"Thai"
+    "languages.th.key":"Thai",
+
+    "languages.skill.writing.key":"Write",
+    "languages.skill.reading.key":"Read",
+    "languages.skill.speaking.key":"Speak",
+    "languages.skill.listening.key":"Listen"
+
 
 }
