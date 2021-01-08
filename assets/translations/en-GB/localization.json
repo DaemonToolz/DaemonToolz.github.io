@@ -27,8 +27,10 @@
     "skill.section.softwares.key": "Softwares",
     "skill.section.operatingsystem.key": "Systems",
     "skill.section.testing.key": "Testing",
-
-    "skill.section.programming.description": "Languages I know",
+    "skill.section.collaboration.key": "Collaboration",
+    "skill.section.collaboration.description": "Collaboration tool",
+    
+    "skill.section.programming.description": "Programming languages",
     "skill.section.frameworks.description": "Frameworks and libraries",
     "skill.section.database.description": "Database technologies",
     "skill.section.networking.description": "Web & Networking technologies",
@@ -65,6 +67,11 @@
     "content.role.key":"Role",
     "content.customers.key":"Customers",
     "content.companylink.key":"Company website",
+    "content.codename.key":"Codename",
+    "content.version.key":"Version",
+    "content.released.key":"Released",
+    "content.repo.key":"Repositories",
+    "content.wikis.key":"Wikis",
 
     "experience.type.maincompany.key":"Employer",
     "experience.type.customercompany.key":"Customer",

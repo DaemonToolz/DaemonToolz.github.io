@@ -219,6 +219,22 @@
             {
                 "name": "VS Code",
                 "level": "Advanced"
+            },
+            {
+                "name": "Adobe Illustrator",
+                "level": "Intermediate"
+            },
+            {
+                "name": "Adobe Photoshop",
+                "level": "Beginner"
+            },
+            {
+                "name": "Visio",
+                "level": "Advanced"
+            },
+            {
+                "name": "Draw.IO",
+                "level": "Advanced"
             }
         ]
     },
@@ -228,6 +244,28 @@
         "content": [
             {
                 "name": "Squash",
+                "level": "Advanced"
+            }
+        ]
+    },
+    {
+        "section": "Collaboration",
+        "icon":"group_work",
+        "content": [
+            {
+                "name": "GitHub / GitLab",
+                "level": "Advanced"
+            },
+            {
+                "name": "VSTS / Azure DevOps",
+                "level": "Intermediate"
+            },
+            {
+                "name": "AWS Cloud9",
+                "level": "Beginner"
+            },
+            {
+                "name": "Agile SCRUM",
                 "level": "Advanced"
             }
         ]
