@@ -19,7 +19,7 @@
 
             <mat-tab-group mat-stretch-tabs class="mat-elevation-z4" #ExperienceTabs>
 
-                <mat-tab *ngFor="let exp of experiences; let i = index">
+                <mat-tab *ngFor="let exp of (experiences$ | async); let i = index">
                     <ng-template mat-tab-label>
                         <mat-card class="mat-elevation-z0">
                             <mat-card-header>
@@ -48,7 +48,7 @@
                         <mat-icon mat-card-avatar class="logo" [svgIcon]="exp.company.toLowerCase()"></mat-icon>
 
                         <div class="logoAction" fxFlex fxLayout="row-reverse">
-                            <button [disabled]="i >= experiences.length-1 ? 'disabled':null" class="maxHeight"
+                            <button [disabled]="i >= (experiences$|async)?.length-1 ? 'disabled':null" class="maxHeight"
                                 mat-button (click)="ExperienceTabs.selectedIndex = i+1;">
                                 <mat-icon>chevron_right</mat-icon>
                             </button>
@@ -59,7 +59,7 @@
                     </div>
                     <mat-divider></mat-divider>
                     <div *ngIf="exp.website !== null" fxFlex fxLayout fxLayoutAlign="center center">
-                        <a mat-button [href]="exp.website">
+                        <a mat-button  target="_blank"  [href]="exp.website">
                             <span [innerHTML]="translator.translations['content.companylink.key']"></span>
                             <mat-icon>launch</mat-icon>
                         </a>
@@ -127,12 +127,12 @@
 
                     <mat-divider></mat-divider>
                     <div fxFlex fxLayout="row wrap" fxLayoutAlign="left center">
-                        <div fxFlex="60">
+                        <div fxFlex="60" fxFlex.lt-md="100">
                             <p [innerHTML]="translator.translations[exp.description]"></p>
 
                         </div>
-                        <mat-divider vertical style="height:150px;"></mat-divider>
-                        <div fxFlex.gt="25" fxFlex fxLayout="row wrap" fxLayoutAlign="left center">
+                        <mat-divider fxHide.lt-md vertical style="height:150px;"></mat-divider>
+                        <div fxFlex="25" fxFlex.lt-md="100" fxFlex fxLayout="row wrap" fxLayoutAlign="left center">
                             <mat-chip-list>
                                 <mat-chip *ngFor="let tech of exp.technologies">{{tech}}</mat-chip>
                             </mat-chip-list>
@@ -155,12 +155,73 @@
                     <mat-icon> science </mat-icon>
                 </mat-panel-description>
             </mat-expansion-panel-header>
+            <div fxFlex fxLayout="row wrap" fxLayoutAlign="center center">
+                <mat-card class="gap" fxFlex.gt-md="30" fxFlex.md="45" fxFlex.lt-md="100"
+                    *ngFor="let project of (projects$ | async); let i = index">
+                    <mat-card-header>
+                        <mat-card-title>
+                            <h2 [innerHTML]="project.codename"></h2>
+                            <h4 [innerHTML]="translator.translations['content.codename.key']"> </h4>
+                        </mat-card-title>
+                        <mat-icon mat-card-avatar [ngClass]="project.released?'public':'private'" >{{project.released ? 'lock_open':'lock'}}</mat-icon>
+                    </mat-card-header>
+                    <mat-card-content>
+                        <div fxFlex fxLayout="column" fxLayoutAlign="left center">
+                            <div class="maxWidth" fxFlex="100" fxLayout="row wrap" fxLayoutAlign="left center">
+                                <div fxFlex="30">
+                                    <span [innerHTML]="translator.translations['content.name.key']"> </span>
+                                </div>
+                                <div fxFlex="60">
+                                    <span [innerHTML]="project.name"></span>
+                                </div>
+                            </div>
 
-            <mat-tab-group mat-stretch-tabs class="mat-elevation-z4" #PersProject>
-            </mat-tab-group>
-               
+                            <div class="maxWidth" fxFlex="100" fxLayout="row wrap" fxLayoutAlign="left center">
+                                <div fxFlex="30">
+                                    <span [innerHTML]="translator.translations['content.version.key']"> </span>
+                                </div>
+                                <div fxFlex="60">
+                                    <span [innerHTML]="project.version"></span>
+                                </div>
+                            </div>
+
+                            <div *ngIf="project.descriptionLinks?.length > 0" class="maxWidth" fxFlex="100" fxLayout="row wrap" fxLayoutAlign="left center">
+                                <h3 [innerHTML]="translator.translations['content.wikis.key']"></h3>
+                                <mat-nav-list class="maxWidth">
+                                    <mat-list-item *ngFor="let link of project.descriptionLinks">
+                                        <a matLine target="_blank"  [href]="link.link" [innerHTML]="link.name"></a>
+                                        <mat-icon> launch</mat-icon>
+                                    </mat-list-item>
+                                </mat-nav-list>
+                            </div>
+
+                            <div *ngIf="project.repoLinks?.length > 0" class="maxWidth" fxFlex="100" fxLayout="row wrap" fxLayoutAlign="left center">
+                                <h3 [innerHTML]="translator.translations['content.repo.key']"></h3>
+                                <mat-nav-list class="maxWidth">
+                                    <mat-list-item *ngFor="let link of project.repoLinks">
+                                        <a matLine target="_blank" [href]="link.link" [innerHTML]="link.name"></a>
+                                        <mat-icon> launch</mat-icon>
+                                    </mat-list-item>
+                                </mat-nav-list>
+
+                            </div>
+
+                            <mat-divider></mat-divider>
+
+                            <div fxFlex="100" fxLayout="row wrap" fxLayoutAlign="left center">
+                                <mat-chip-list>
+                                    <mat-chip *ngFor="let tech of project.technologies">{{tech}}</mat-chip>
+                                </mat-chip-list>
+
+                            </div>
+                        </div>
+                    </mat-card-content>
+                </mat-card>
+
+            </div>
+
+
 
         </mat-expansion-panel>
     </mat-card-content>
 </mat-card>
-

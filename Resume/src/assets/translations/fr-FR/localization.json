@@ -17,6 +17,7 @@
     "gallery.title.description":"Logiciels et réussites",
     "contacts.title.description":"Me contacter",
 
+
     "skill.section.programming.key": "Développement",
     "skill.section.frameworks.key": "Frameworks",
     "skill.section.database.key": "Bases de Données",
@@ -27,6 +28,8 @@
     "skill.section.softwares.key": "Logiciels",
     "skill.section.operatingsystem.key": "Systèmes",
     "skill.section.testing.key": "Tests",
+    "skill.section.collaboration.key": "Collaboration",
+    "skill.section.collaboration.description": "Outils de collaboration",
 
     "skill.section.programming.description": "Langages de Développement",
     "skill.section.frameworks.description": "Frameworks & bibliothèques",
@@ -66,7 +69,12 @@
     "content.role.key":"Rôle",
     "content.customers.key":"Clients",
     "content.companylink.key":"Site internet de l'entreprise",
-
+    "content.codename.key":"Nom de code",
+    "content.version.key":"Version",
+    "content.released.key":"Released",
+    "content.repo.key":"Dépôts",
+    "content.wikis.key":"Wikis",
+    
     "experience.type.maincompany.key":"Employeur",
     "experience.type.customercompany.key":"Client",
     "experience.role.softwareengineer.key":"Ingénieur Logiciel",

@@ -41,6 +41,9 @@ div{
     height:150px;
 }
 
+.maxWidth{
+    width: 100%;;
+}
 
 .headers-align .mat-expansion-panel-header-title,
 .headers-align .mat-expansion-panel-header-description {
@@ -54,4 +57,15 @@ div{
 
 .headers-align .mat-form-field + .mat-form-field {
   margin-left: 8px;
+}
+
+.gap{
+    margin:10px;
+}
+
+.public{
+    color:green;
+}
+.private{
+    color:red;
 }

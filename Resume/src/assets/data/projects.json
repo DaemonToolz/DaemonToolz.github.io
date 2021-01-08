@@ -1,0 +1,31 @@
+[
+    {
+        "name":"DaemonToolz.github.io",
+        "codename":"Memory",
+        "version":"2.3.0.0",
+        "released":true,
+        "description":"",
+        "descriptionLinks":[
+       
+        ],
+        "repoLinks":[
+            {
+                "name":"DaemonToolz.github.io",
+                "link": "https://github.com/DaemonToolz/DaemonToolz.github.io"
+            }
+           
+        ],
+        "technologies":[
+            "Angular 10",
+            "Angular Material",
+            "HTML",
+            "CSS",
+            "TypeScript",
+            "JSON",
+            "GitHub"
+        ],
+        "gallery":[
+
+        ]
+    }
+]

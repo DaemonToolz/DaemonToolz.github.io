@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Observable } from 'rxjs';
 import { Section } from 'src/app/models/skills';
 import { SkillsReaderService } from 'src/app/services/skills-reader.service';
 import { TranslationsService } from 'src/app/services/translations.service';
@@ -11,16 +12,14 @@ import { SkillLevels } from './models/levels';
 })
 export class SkillsComponent implements OnInit {
   public SkillLevels = SkillLevels;
-  public skill_set: Section[] = [];
-  constructor(private skills: SkillsReaderService, public translator : TranslationsService) {
-    const self = this;
-    skills.getJSON().subscribe(data => {
-      self.skill_set = data;
-    });
+  public skills$: Observable<Section[]>
+  constructor(public skills: SkillsReaderService, public translator : TranslationsService) {
+    
 
    }
 
   ngOnInit(): void {
+    this.skills$ = this.skills.getJSON();
   }
 
   public translateSkillLevel(level: string): string{

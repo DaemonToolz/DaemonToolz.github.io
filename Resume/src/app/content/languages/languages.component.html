@@ -6,7 +6,7 @@
     </mat-card-header>
 
     <mat-card-content>
-        <mat-expansion-panel class="headers-align" *ngFor="let lang of languages" class="headers-align" hideToggle>
+        <mat-expansion-panel class="headers-align" *ngFor="let lang of (languages$ | async)" class="headers-align" hideToggle>
             <mat-expansion-panel-header>
                 <mat-panel-title>
                     <h2 [innerHTML]="translateLanguage(lang.name)"></h2>
@@ -26,13 +26,13 @@
                     <h3 fxFlex [innerHTML]="lang.estimated_level"></h3>
                 </div>
 
-                <div fxFlex fxLayout="row wrap" fxLayoutAlign="center center" fxLayoutGap="125px">
+                <div fxFlex fxLayout="row wrap" fxLayoutAlign="center center" fxLayoutGap="75px">
                     <div fxFlex fxLayout="column wrap" fxLayoutAlign="center center" fxLayoutGap="50px">
                         <div fxFlex fxLayout="column wrap" fxLayoutAlign="center center">
                             <img class="secondarylogo" src="assets/images/hear.logo.png" />
                             <mat-progress-spinner class="absolute" fxFlex="100%" fxFlexAlign="center"
                                 [ngClass]="defineClass(lang)" mode="determinate" [value]="averageLevel(lang)"
-                                strokeWidth='5' diameter='100'></mat-progress-spinner>
+                                strokeWidth='5' diameter='75'></mat-progress-spinner>
                         </div>
                         <div fxFlex fxLayout="column wrap" fxLayoutAlign="center center">
                             <h3 fxHide.lt-md fxFlex [innerHTML]="translateLanguageLevelEnum(lang.listening_level)"></h3>
@@ -47,7 +47,7 @@
                             <img class="secondarylogo" src="assets/images/write.logo.png" />
                             <mat-progress-spinner class="absolute" fxFlex="100%" fxFlexAlign="center"
                                 [ngClass]="defineClass(lang)" mode="determinate" [value]="averageLevel(lang)"
-                                strokeWidth='5' diameter='100'></mat-progress-spinner>
+                                strokeWidth='5' diameter='75'></mat-progress-spinner>
                         </div>
                         <div fxFlex fxLayout="column wrap" fxLayoutAlign="center center">
                             <h3 fxHide.lt-md fxFlex [innerHTML]="translateLanguageLevelEnum(lang.writing_level)"></h3>
@@ -62,7 +62,7 @@
                             <img class="secondarylogo" src="assets/images/speak.logo.png" />
                             <mat-progress-spinner class="absolute" fxFlex="100%" fxFlexAlign="center"
                                 [ngClass]="defineClass(lang)" mode="determinate" [value]="averageLevel(lang)"
-                                strokeWidth='5' diameter='100'></mat-progress-spinner>
+                                strokeWidth='5' diameter='75'></mat-progress-spinner>
                         </div>
                         <div fxFlex fxLayout="column wrap" fxLayoutAlign="center center">
                             <h3 fxHide.lt-md fxFlex [innerHTML]="translateLanguageLevelEnum(lang.speaking_level)"></h3>
@@ -76,7 +76,7 @@
                             <img class="secondarylogo" src="assets/images/read.logo.png" />
                             <mat-progress-spinner class="absolute" fxFlex="100%" fxFlexAlign="center"
                                 [ngClass]="defineClass(lang)" mode="determinate" [value]="averageLevel(lang)"
-                                strokeWidth='5' diameter='100'>
+                                strokeWidth='5' diameter='75'>
                             </mat-progress-spinner>
                         </div>
                         <div fxFlex fxLayout="column wrap" fxLayoutAlign="center center">
