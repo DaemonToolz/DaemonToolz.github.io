@@ -31,7 +31,8 @@ import { GalleryComponent } from './content/gallery/gallery.component';
 import { HomeComponent } from './content/home/home.component';
 import { NotFoundComponent } from './content/errors/not-found/not-found.component';
 import { HttpClientModule } from '@angular/common/http';
-
+import {IvyCarouselModule} from 'angular-responsive-carousel';
+import { SimplifiedMenuComponent } from './simplified-menu/simplified-menu.component';
 
 @NgModule({
   declarations: [
@@ -45,7 +46,8 @@ import { HttpClientModule } from '@angular/common/http';
     LinksComponent,
     GalleryComponent,
     HomeComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    SimplifiedMenuComponent
   ],
   imports: [
     BrowserModule,
@@ -66,6 +68,7 @@ import { HttpClientModule } from '@angular/common/http';
     MatExpansionModule,
     MatListModule,
     MatCardModule,
+    IvyCarouselModule,
     HttpClientModule,
   ],
   providers: [{ provide: LOCALE_ID, useValue: 'en-GB'}],

@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { Project } from '../models/Project';
+import {GalleryContent, Project } from '../models/Project';
 
 @Injectable({
   providedIn: 'root'
@@ -13,6 +13,11 @@ export class ProjectsService {
   public getJSON(): Observable<Array<Project>> {
     return this.http.get<Array<Project>>("assets/data/projects.json");
   }
+
+  public getGallery(): Observable<Array<GalleryContent>> {
+    return this.http.get<Array<GalleryContent>>("assets/data/gallery.json");
+  }
+
 }
 
 

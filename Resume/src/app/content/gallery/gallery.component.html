@@ -6,6 +6,9 @@
         </mat-card-title>
     </mat-card-header>
     <mat-card-content>
-
+        <div *ngFor="let gal of (gallery$ | async)">
+            <h2 [innerHTML]="gal.codename"> </h2>
+            <carousel height="500" cellWidth="1200" cellsToShow="1" [images]="gal.images"></carousel>
+        </div>
     </mat-card-content>
 </mat-card>

@@ -155,7 +155,7 @@
                     <mat-icon> science </mat-icon>
                 </mat-panel-description>
             </mat-expansion-panel-header>
-            <div fxFlex fxLayout="row wrap" fxLayoutAlign="center center">
+            <div fxFlex fxLayout="row wrap" fxLayoutAlign="center top">
                 <mat-card class="gap" fxFlex.gt-md="30" fxFlex.md="45" fxFlex.lt-md="100"
                     *ngFor="let project of (projects$ | async); let i = index">
                     <mat-card-header>
@@ -163,7 +163,7 @@
                             <h2 [innerHTML]="project.codename"></h2>
                             <h4 [innerHTML]="translator.translations['content.codename.key']"> </h4>
                         </mat-card-title>
-                        <mat-icon mat-card-avatar [ngClass]="project.released?'public':'private'" >{{project.released ? 'lock_open':'lock'}}</mat-icon>
+                        <mat-icon mat-card-avatar [ngClass]="project.released?'public':'private'" >{{project.released ? 'new_releases':'lock'}}</mat-icon>
                     </mat-card-header>
                     <mat-card-content>
                         <div fxFlex fxLayout="column" fxLayoutAlign="left center">
@@ -185,6 +185,20 @@
                                 </div>
                             </div>
 
+                            <div class="maxWidth" fxFlex="100" fxLayout="row wrap" fxLayoutAlign="left center">
+                                <div fxFlex>
+                                    <p [innerHTML]="translateProjectDescription(project.description)"> </p>
+                                </div>
+                            </div>
+                      
+                            <div fxFlex="100" fxLayout="row wrap" fxLayoutAlign="left center">
+                                <mat-chip-list>
+                                    <mat-chip *ngFor="let tech of project.technologies">{{tech}}</mat-chip>
+                                </mat-chip-list>
+                            </div>
+
+                         
+
                             <div *ngIf="project.descriptionLinks?.length > 0" class="maxWidth" fxFlex="100" fxLayout="row wrap" fxLayoutAlign="left center">
                                 <h3 [innerHTML]="translator.translations['content.wikis.key']"></h3>
                                 <mat-nav-list class="maxWidth">
@@ -203,15 +217,6 @@
                                         <mat-icon> launch</mat-icon>
                                     </mat-list-item>
                                 </mat-nav-list>
-
-                            </div>
-
-                            <mat-divider></mat-divider>
-
-                            <div fxFlex="100" fxLayout="row wrap" fxLayoutAlign="left center">
-                                <mat-chip-list>
-                                    <mat-chip *ngFor="let tech of project.technologies">{{tech}}</mat-chip>
-                                </mat-chip-list>
 
                             </div>
                         </div>

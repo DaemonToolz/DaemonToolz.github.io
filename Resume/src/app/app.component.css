@@ -4,3 +4,11 @@
     top: 0; 
     z-index: 1000; 
 }
+
+
+.title-bar-bottom{
+    position: fixed;
+    bottom:0;
+    width:100%;
+    z-index: 1000; 
+}

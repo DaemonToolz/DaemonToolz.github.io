@@ -28,6 +28,11 @@ export class ExperienceComponent implements OnInit, OnDestroy {
   public translateRole(role: string): string {
     return this.translator.translations[`experience.role.${role.toLowerCase()}.key`] ?? role
   }
+
+  public translateProjectDescription(project: string): string {
+    return this.translator.translations[`projects.${project.toLowerCase()}.main.description`] ?? project
+  }
+
   ngOnInit(): void {
     this.projects$ = this.projectService.getJSON();
     this.experiences$ = this.experienceService.getJSON();

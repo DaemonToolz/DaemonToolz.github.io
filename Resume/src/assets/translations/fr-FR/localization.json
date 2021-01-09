@@ -74,7 +74,8 @@
     "content.released.key":"Released",
     "content.repo.key":"Dépôts",
     "content.wikis.key":"Wikis",
-    
+    "content.linkedin.key":"Lien LinkedIn",
+
     "experience.type.maincompany.key":"Employeur",
     "experience.type.customercompany.key":"Client",
     "experience.role.softwareengineer.key":"Ingénieur Logiciel",
@@ -104,6 +105,17 @@
     "languages.skill.writing.key":"Écrire",
     "languages.skill.reading.key":"Lire",
     "languages.skill.speaking.key":"Parler",
-    "languages.skill.listening.key":"Écouter"
+    "languages.skill.listening.key":"Écouter",
 
+    "projects.cv.main.description":"Mon CV en ligne",
+    "projects.deploy.main.description":"Agent de déploiement en C#",
+    "projects.satellite.main.description":"Dépôt de fichier en ligne",
+    "projects.dandelion.main.description":"Outil de réservation / utilisation de salles (de réunion)",
+    "projects.locust.main.description":"Système de navigation & coordination de navigation de drone ANAFI / PARROT",
+    "projects.greenium.main.description":"Prototype de navigateur internet 'écologique' dane le cadre de mes études d'ingénieur",
+    "projects.workstation.main.description":"Outil de collaboration en ligne",
+
+    "about.line1.description":"Je suis un Ingénieur Développement logiciel pour qui une difficulté représente toujours un nouveau challenge, parfois pouvant engendrer des changements. Ces changements n'ont pas d'impacts négatifs, bien au contraire puisque cela me force à évoluer et à aller de l'avant.",
+    "about.line2.description":"C'est pourquoi, sur un moyen-long terme, j'ai l'intention de viser large en améliorant mes compétences en général, mais aussi en augmentant la portée de ma carrière (au lieu de rester en France, j'envisage une expérience internationale)"
+    
 }

@@ -14,3 +14,13 @@ export class Link{
     public name: string;
     public link: string;
 }
+
+export class ImagePath{
+    public path: string;
+}
+
+export class GalleryContent{
+    public name: string;
+    public codename: string;
+    public images: ImagePath[];
+}
