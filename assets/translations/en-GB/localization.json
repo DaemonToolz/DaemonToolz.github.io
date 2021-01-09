@@ -72,6 +72,7 @@
     "content.released.key":"Released",
     "content.repo.key":"Repositories",
     "content.wikis.key":"Wikis",
+    "content.linkedin.key":"LinkedIn link",
 
     "experience.type.maincompany.key":"Employer",
     "experience.type.customercompany.key":"Customer",
@@ -101,7 +102,18 @@
     "languages.skill.writing.key":"Write",
     "languages.skill.reading.key":"Read",
     "languages.skill.speaking.key":"Speak",
-    "languages.skill.listening.key":"Listen"
+    "languages.skill.listening.key":"Listen",
 
+    "projects.cv.main.description":"My online CV",
+    "projects.deploy.main.description":"C# Deployment Agent",
+    "projects.satellite.main.description":"Online file depository",
+    "projects.dandelion.main.description":"(Meeting) rooms reservation / use software",
+    "projects.locust.main.description":"Automated navigation project using Parrot/ANAFI",
+    "projects.greenium.main.description":"Prototype of a'Green' Internet Browser conceived during my Engineering Degree",
+    "projects.workstation.main.description":"Online Collaborative Tool",
 
+    "about.line1.description":"I am a Software Engineer to whom a difficulty is always a new challenge, sometimes creating changes, These changes don't have a bad impact, on the contrary since they force me to evolve and look forwards instead of backwards.",
+    "about.line2.description":"This is why, in a medium-long term future, I intend to aim wide : both increasing my skills in general and the range of my career (instead of remaining in France, I want to have an international experience)."
+    
 }
+
