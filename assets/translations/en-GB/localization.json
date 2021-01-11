@@ -15,7 +15,7 @@
     "studies.title.description":"All my studies and certifications",
     "languages.title.description":"All the languages I know or study",
     "gallery.title.description":"Softwares & achievements",
-    "contacts.title.description":"My contacts",
+    "contacts.title.description":"Contact me",
     
     "skill.section.programming.key": "Programming",
     "skill.section.frameworks.key": "Frameworks",
@@ -57,7 +57,7 @@
     "studies.specialization.key": "Specialization",
     "studies.achievements.key": "Achievements",
     "studies.courses.key": "Courses",
-    "experience.projects.key": "Personal Projects",
+    "experience.projects.key": "Projects",
     
     "content.from.key":"From",
     "content.to.key":"To",
