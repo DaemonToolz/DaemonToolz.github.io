@@ -69,3 +69,8 @@ div{
 .private{
     color:red;
 }
+
+.main{
+    margin:5px;
+    margin-bottom:10vh;
+}

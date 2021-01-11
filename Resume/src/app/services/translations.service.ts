@@ -14,7 +14,7 @@ export class TranslationsService {
       if(_locale.includes("fr")){
         this.selected_lang = TranslationLanguage.Français
       }
-
+      /*
       if(_locale.includes("ja")){
         this.selected_lang = TranslationLanguage.日本語
       }
@@ -22,7 +22,7 @@ export class TranslationsService {
       if(_locale.includes("th")){
         this.selected_lang = TranslationLanguage.ไทย
       }
-
+    */
       this.updateTranslations(this.selected_lang)
     } catch (ex){}
   }
