@@ -1,0 +1,123 @@
+// Custom Theming for Angular Material
+
+// For more information: https://material.angular.io/guide/theming
+@use '@angular/material' as mat;
+// Plus imports for other components in your app.
+
+// Include the common styles for Angular Material. We include this here so that you only
+// have to load a single css file for Angular Material in your app.
+// Be sure that you only ever include this mixin once!
+@include mat.core();
+
+$primary-palette: (
+ 50: #1d1d1d,
+ 100: #1d1d1d,
+ 200: #1d1d1d,
+ 300: #1d1d1d,
+ 400: #1d1d1d,
+ 500: #1d1d1d,
+ 600: #1d1d1d,
+ 700: #1d1d1d,
+ 800: #1d1d1d,
+ 900: #1d1d1d,
+
+ contrast: (
+   50:  rgb(225,225,225),
+   100: rgb(225,225,225),
+   200: rgb(225,225,225),
+   300: rgb(225,225,225),
+   400: rgb(225,225,225),
+   500: rgb(225,225,225),
+   600: rgb(225,225,225),
+   700: rgb(225,225,225),
+   800: rgb(225,225,225),
+   900: rgb(225,225,225)
+ )
+);
+
+$secondary-palette: (
+ 50: #779977,
+ 100: #779977,
+ 200: #779977,
+ 300: #779977,
+ 400: #779977,
+ 500: #779977,
+ 600: #779977,
+ 700: #779977,
+ 800: #779977,
+ 900: #779977,
+
+ contrast: (
+   50:  white,
+   100: white,
+   200: white,
+   300: white,
+   400: white,
+   500: white,
+   600: white,
+   700: white,
+   800: white,
+   900: white
+ )
+);
+
+$error-palette: (
+ 50: #FF5449,
+ 100: #FF5449,
+ 200: #FF5449,
+ 300: #FF5449,
+ 400: #FF5449,
+ 500: #FF5449,
+ 600: #FF5449,
+ 700: #FF5449,
+ 800: #FF5449,
+ 900: #FF5449,
+
+ contrast: (
+   50:  white,
+   100: white,
+   200: white,
+   300: white,
+   400: white,
+   500: white,
+   600: white,
+   700: white,
+   800: white,
+   900: white
+ )
+);
+// Define the palettes for your theme using the Material Design palettes available in palette.scss
+// (imported above). For each palette, you can optionally specify a default, lighter, and darker
+// hue. Available color palettes: https://material.io/design/color/
+$resume-primary: mat.define-palette($primary-palette);
+$resume-accent: mat.define-palette($secondary-palette);
+
+// The warn palette is optional (defaults to red).
+$resume-warn: mat.define-palette($error-palette);
+
+// Create the theme object. A theme consists of configurations for individual
+// theming systems such as "color" or "typography".
+$resume-theme: mat.define-light-theme((
+  color: (
+    primary: $resume-primary,
+    accent: $resume-accent,
+    warn: $resume-warn,
+  ),
+  typography: mat.define-typography-config(),
+  density: 0
+));
+
+// Include theme styles for core and each component used in your app.
+// Alternatively, you can import and @include the theme mixins for each component
+// that you are using.
+@include mat.all-component-themes($resume-theme);
+
+/* You can add global styles to this file, and also import other style files */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+html, body { 
+  --tw-bg-opacity: 1;
+  background-color: rgb(249 250 251 / var(--tw-bg-opacity));
+}
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

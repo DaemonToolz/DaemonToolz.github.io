@@ -1,0 +1,105 @@
+<title translate="main.title.key"></title>
+
+<!--<app-simplified-menu class="title-bar"></app-simplified-menu>-->
+
+<mat-drawer-container fullscreen>
+  <mat-drawer mode="side" [opened]="true">
+    <div class="h-full flex flex-col space-between center w-[20vw] overflow-hidden">
+      <div class="flex flex-col h-full">
+        <a
+          mat-raised-button
+          class="w-full"
+          color="primary"
+          style="justify-content: flex-start"
+          routerLink="/home"
+        >
+          <h3 translate="main.title.key"></h3>
+        </a>
+
+        <a
+          mat-button
+          class="w-full"
+          style="justify-content: flex-start"
+          routerLink="/about"
+        >
+          <span [translate]="'about.title.key'"></span>
+        </a>
+
+        <a
+          mat-button
+          class="w-full"
+          style="justify-content: flex-start"
+          routerLink="/skills"
+        >
+          <span [translate]="'skills.title.key'"></span>
+        </a>
+        <a
+          mat-button
+          class="w-full"
+          style="justify-content: flex-start"
+          routerLink="/experience"
+        >
+          <span [translate]="'experience.title.key'"></span>
+        </a>
+        <a
+          mat-button
+          class="w-full"
+          style="justify-content: flex-start"
+          routerLink="/studies"
+        >
+          <span [translate]="'studies.title.key'"></span>
+        </a>
+        <a
+          mat-button
+          class="w-full"
+          style="justify-content: flex-start"
+          routerLink="/languages"
+        >
+          <span [translate]="'languages.title.key'"></span>
+        </a>
+
+        <a
+          mat-button
+          class="w-full"
+          style="justify-content: flex-start"
+          routerLink="/gallery"
+        >
+          <span [translate]="'gallery.title.key'"></span>
+        </a>
+
+        <a
+          mat-button
+          class="w-full"
+          style="justify-content: flex-start"
+          routerLink="/contacts"
+        >
+          <span [translate]="'contacts.title.key'"></span>
+        </a>
+      </div>
+
+      <div class="flex-1 flex flex-col-reverse h-fit">
+        <button mat-button color="primary" style="justify-content: flex-start" class="w-full" [matMenuTriggerFor]="languages">
+          <mat-icon> translate </mat-icon>
+          <span [translate]="activeLang"></span>
+        </button>
+      </div>
+    </div>
+  </mat-drawer>
+  <mat-drawer-content>
+    <div class="p-2 h-full w-full">
+      <router-outlet />
+    </div>
+  </mat-drawer-content>
+</mat-drawer-container>
+
+<div class="fixed bottom-0 w-full z-50"></div>
+
+<mat-menu #languages="matMenu">
+  <button mat-menu-item translate="languages.th.key" (click)="selectLang('th')">
+  </button>
+  <button mat-menu-item translate="languages.en.key" (click)="selectLang('en')">
+  </button>
+  <button mat-menu-item translate="languages.fr.key" (click)="selectLang('fr')">
+  </button>
+</mat-menu>
+

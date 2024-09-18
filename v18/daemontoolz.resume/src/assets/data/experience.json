@@ -1,0 +1,162 @@
+[
+    {
+        "company":"Thales",
+        "type":"MainCompany",
+        "role":"SoftwareEngineer",
+        "employer":null,
+        "from":"09-01-2018",
+        "to":null,
+
+        "description":"experience.thales.job.description",
+        "website":"https://www.thalesgroup.com/",
+        "customers":[
+            "Eurotunnel"
+        ],
+        "technologies":[
+            "UWP",
+            "Angular 7+",
+            "ZeroMQ",
+            "Golang",
+            "Python",
+            "SocketIO",
+            "FFMPEG",
+            "Gstreamer",
+            "DASH",
+            "WebRTC",
+            "NGINX",
+            "AWS",
+            "Codacy",
+            "OWASP","CWE",
+            "W10 IoT Core",
+            "Raspian",
+            "Parrot SDK",
+            "SonarCloud",
+            "OpenShift",
+            "Kubernetes",
+            "Docker"
+        ]
+    },
+    {
+        "company":"Eurotunnel",
+        "type":"CustomerCompany",
+        "role":"ServiceProvider",
+        "employer":"Thales",
+
+        "from":"09-01-2018",
+        "to":null,
+        "description":"experience.eurotunnel.job.description",
+        "website":"https://www.eurotunnel.com/",
+        "technologies":[
+            "C#", 
+            "ASP.NET",
+            ".NET Core",
+            "VSTS",
+            "Git",
+            "Octopus",
+            "Angular",
+            "C++",
+            "WinForm",
+            "WPF",
+            "WCF",
+            "SignalR",
+            "RabbitMQ",
+            "Azure",
+            "Material",
+            "AGILE Scrum",
+            "SonarQube"
+        ] 
+    },
+    
+    {
+        "company":"Thales",
+        "type":"MainCompany",
+        "role":"SoftwareEngineerIntern",
+        "employer":null,
+
+        "from":"03-01-2018",
+        "to":"09-01-2018",
+
+        "description":"experience.thales.internship.description",
+        "website":"https://www.thalesgroup.com/",
+        "technologies":[
+            "Angular",
+            "Material",
+            "Typescript",
+            "Docker",
+            "OWASP",
+            "CWE",
+            "Loopback",
+            "PostgresSQL",
+            "Docker",
+            "Rancher",
+            "Depedency Check",
+            "SonarQube",
+            "Agile SCRUM"
+        ]
+    },
+    {
+        "company":"Avira",
+        "type":"MainCompany",
+        "role":"SoftwareEngineerIntern",
+        "employer":null,
+
+        "from":"09-01-2016",
+        "to":"02-01-2017",
+
+        "description":"experience.avira.internship.description",
+        "website":"https://www.avira.com/",
+        "technologies":[
+            "C#",
+            "WPF",
+            "C/C++",
+            "C++ AMP / WARP",
+            "Python",
+            "AWS",
+            "JWT",
+            "Agile SCRUM"
+        ]
+    },
+    {
+        "company":"OPEN",
+        "type":"MainCompany",
+        "role":"SoftwareDeveloperIntern",
+        "employer":null,
+
+        "from":"02-01-2016",
+        "to":"05-01-2016",
+
+        "description": "experience.open.internship.description",
+        "website":"https://www.open.global/",
+        "technologies":[
+            "JAVA",
+            "Struts2",
+            "Hibernate",
+            "Maven",
+            "SVN",
+            "Eclipse MARS",
+            "MANTIS",
+            "Agile SCRUM"
+        ]
+    },
+    
+    {
+        "company":"Dower Informatique",
+        "type":"MainCompany",
+        "role":"SoftwareDeveloperIntern",
+        "employer":null,
+
+        "from":"04-01-2015",
+        "to":"06-01-2015",
+
+        "description":"experience.dower.internship.description",
+        "website":null,
+        "technologies":[
+            "PHP",
+            "FTP",
+            "Android",
+            "SQLite",
+            "PowerShell",
+            "Active Directory"
+        ]
+    }
+]

@@ -1,0 +1,32 @@
+{
+    "main.title.key": "アクスエル メーシエジュスキ",
+    "about.title.key": "私について",
+    "skills.title.key": "芸域",
+    "experience.title.key": "経験",
+    "studies.title.key": "学業",
+    "languages.title.key": "言葉",
+    "gallery.title.key": "陳列等",
+    "contacts.title.key": "連絡",
+    "homepage.title.key": "ホメパゲ",
+
+    "about.title.description":"私が誰であれかについての短い要約。",
+    "skills.title.description":"私が知っていこと、なにができます。",
+    "experience.title.description":"以前の仕事と個人的体験。",
+    "studies.title.description":"学業と検定。",
+    "languages.title.description":"言葉を勉強します。",
+    "gallery.title.description":"ソフトウエアと成跡。",
+    "contacts.title.description":"私に連絡して。",
+
+    "skill.section.programming.key": "プログラミング",
+    "skill.section.frameworks.key": "フレームワーク",
+    "skill.section.database.key": "データベース",
+    "skill.section.networking.key": "ウェブ",
+    "skill.section.videostreaming.key": "ストリーミング ",
+    "skill.section.architecture.key": "ソフトウェアアーキテクチャ",
+    "skill.section.security.key": "ソフトウェアセキュリティ",
+    "skill.section.softwares.key": "ソフトウェア",
+    "skill.section.operatingsystem.key": "システム",
+    "skill.section.testing.key": "テスティング",
+    "skill.section.collaboration.key": "コラボレーション",
+    "skill.section.collaboration.description": "コラボレーション用具"  
+}

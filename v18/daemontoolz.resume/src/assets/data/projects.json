@@ -1,0 +1,208 @@
+[
+    {
+        "name": "DaemonToolz.github.io",
+        "codename": "Resume",
+        "version": "3.0.0.0",
+        "released": true,
+        "description": "cv",
+        "descriptionLinks": [],
+        "repoLinks": [
+            {
+                "name": "DaemonToolz.github.io",
+                "link": "https://github.com/DaemonToolz/DaemonToolz.github.io"
+            }
+        ],
+        "technologies": [
+            "Angular 17",
+            "Angular Material",
+            "HTML",
+            "CSS",
+            "TypeScript",
+            "JSON",
+            "GitHub"
+        ],
+        "gallery": []
+    },
+    {
+        "name": "Deployment Agent",
+        "codename": "Ganymede",
+        "version": "N/A",
+        "released": false,
+        "description": "deploy",
+        "descriptionLinks": [],
+        "repoLinks": [
+            {
+                "name": "Code",
+                "link": "https://github.com/DaemonToolz/Ganymede"
+            }
+        ],
+        "technologies": [
+            "C#",
+            "JSON",
+            "ZeroMQ"
+        ],
+        "gallery": []
+    },
+    {
+        "name": "Storage Service",
+        "codename": "Satellite",
+        "version": "N/A",
+        "released": false,
+        "description": "satellite",
+        "descriptionLinks": [],
+        "repoLinks": [
+            {
+                "name": "Satellite.web.ui",
+                "link": "https://github.com/DaemonToolz/satellite.web.ui"
+            },
+            {
+                "name": "Satellite.web.core",
+                "link": "https://github.com/DaemonToolz/satellite.web.core"
+            }
+        ],
+        "technologies": [
+            "Golang",
+            "Angular",
+            "RabbitMQ",
+            "SocketIO"
+        ],
+        "gallery": []
+    },
+    {
+        "name": "Room Reservation",
+        "codename": "Dandelion",
+        "version": "1.0.0-alpha",
+        "released": false,
+        "description": "dandelion",
+        "descriptionLinks": [],
+        "repoLinks": [],
+        "technologies": [
+            "C#",
+            "AWS",
+            "Azure",
+            "UWP",
+            "WebSockets",
+            "SQL Server",
+            "Windows 10 IOT",
+            "Amazon SNS / SQS"
+        ],
+        "gallery": []
+    },
+    {
+        "name": "Locuste Surveillance",
+        "codename": "Locuste",
+        "version": "2.0.0-alpha",
+        "released": true,
+        "description": "locust",
+        "descriptionLinks": [
+            {
+                "name":"PC Dashboard",
+                "link":"https://github.com/DaemonToolz/locuste.dashboard.ui/wiki"
+            },
+            {
+                "name":"Mobile Dashboard",
+                "link":"https://github.com/DaemonToolz/locuste.dashboard.mobile/wiki"
+            },
+            {
+                "name":"Version Emitter",
+                "link":"https://github.com/DaemonToolz/locuste.dashboard.deploy/wiki"
+            },
+            {
+                "name":"Deployment Service",
+                "link":"https://github.com/DaemonToolz/locuste.service.deploy"
+            }
+        ],
+        "repoLinks": [
+            {
+                "name":"PC Dashboard",
+                "link": "https://github.com/DaemonToolz/locuste.dashboard.ui"
+            },
+            {
+                "name":"Mobile Dashboard",
+                "link": "https://github.com/DaemonToolz/locuste.dashboard.mobile"
+            },
+            {
+                "name": "Brain",
+                "link": "https://github.com/DaemonToolz/locuste.service.brain"
+            },
+            {
+                "name":"Flight Scheduler",
+                "link":"https://github.com/DaemonToolz/locuste.service.osm"
+            },
+            {
+                "name":"Parrot Communicator",
+                "link":"https://github.com/DaemonToolz/locuste.drone.automata"
+            },
+            {
+                "name":"Diagnostics",
+                "link":"https://github.com/DaemonToolz/locuste.diagnostic.console"
+            },
+            {
+                "name":"Version Emitter",
+                "link":"https://github.com/DaemonToolz/locuste.dashboard.deploy"
+            },
+            {
+                "name":"Deployment Service",
+                "link":"https://github.com/DaemonToolz/locuste.service.deploy"
+            }
+            
+        ],
+        "technologies": [
+            "C#",
+            "UWP",
+            "Python",
+            "C++",
+            "Golang",
+            "Raspberry PI 4B+",
+            "SocketIO",
+            "FFMPEG",
+            "ZeroMQ",
+            "Olympe SDK",
+            "ANAFI"
+        ],
+        "gallery": []
+    },
+    {
+        "name": "Greenium",
+        "codename": "Greenium",
+        "version": "1.0.0-beta",
+        "released": false,
+        "description": "greenium",
+        "descriptionLinks": [],
+        "repoLinks": [
+            {
+                "name":"Code",
+                "link":"https://github.com/DaemonToolz/Greenium"
+            }
+        ],
+        "technologies": [
+            "C#",
+            "WPF",
+            "SonarQube"        
+        ],
+        "gallery": []
+    },   
+    {
+        "name": "Workstation",
+        "codename": "Workstation",
+        "version": "1.0.0-beta",
+        "released": false,
+        "description": "workstation",
+        "descriptionLinks": [],
+        "repoLinks": [
+            {
+                "name":"Code",
+                "link":"https://github.com/DaemonToolz/WorkStation"
+            }
+        ],
+        "technologies": [
+            "C#",
+            "Golang",
+            "ASP.NET",
+            "SignalR",
+            "SQL Server",
+            "SonarQube"        
+        ],
+        "gallery": []
+    }
+]

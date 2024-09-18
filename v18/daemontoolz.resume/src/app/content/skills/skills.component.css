@@ -1,0 +1,57 @@
+mat-card{
+    margin:5px;
+    margin-bottom:10vh;
+}
+
+div{
+    margin: 2px;
+}
+
+::ng-deep .Advanced .mat-progress-bar-fill::after {
+    background-color: green;
+}
+
+::ng-deep .Intermediate .mat-progress-bar-fill::after {
+    background-color: orange;
+}
+
+::ng-deep .Beginner .mat-progress-bar-fill::after {
+    background-color: red;
+}
+
+
+
+::ng-deep .mat-progress-bar-buffer {
+    background: #E4E8EB;
+}
+
+h3{
+    padding:0;
+    margin:0;
+}
+
+h2 {
+    margin:2px;
+    padding:2px;
+}
+
+
+::ng-deep .mat-progress-bar {
+    height:20px !important;
+
+}
+
+
+.headers-align .mat-expansion-panel-header-title,
+.headers-align .mat-expansion-panel-header-description {
+  flex-basis: 0;
+}
+
+.headers-align .mat-expansion-panel-header-description {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.headers-align .mat-form-field + .mat-form-field {
+  margin-left: 8px;
+}

@@ -1,0 +1,33 @@
+[
+    {
+        "name": "Workstation",
+        "codename": "Workstation",
+        "images":[
+            {"path":"assets/gallery/workstation/ScreenAdmin01.jpg"},
+            {"path":"assets/gallery/workstation/ScreenAdmin02.jpg"},
+            {"path":"assets/gallery/workstation/ScreenAdmin03.jpg"},
+            {"path":"assets/gallery/workstation/ScreenAdmin04.jpg"},
+            {"path":"assets/gallery/workstation/ScreenAdmin05.jpg"},
+            {"path":"assets/gallery/workstation/ScreenAdmin06.jpg"},
+            {"path":"assets/gallery/workstation/ScreenAdmin07.jpg"},
+            {"path":"assets/gallery/workstation/ScreenAdmin08.jpg"},
+            {"path":"assets/gallery/workstation/ScreenAdmin09.jpg"},
+            {"path":"assets/gallery/workstation/ScreenHome01.jpg"},
+            {"path":"assets/gallery/workstation/ScreenHome02.jpg"},
+            {"path":"assets/gallery/workstation/ScreenNotification01.jpg"},
+            {"path":"assets/gallery/workstation/ScreenProject01.jpg"},
+            {"path":"assets/gallery/workstation/ScreenProject02.jpg"},
+            {"path":"assets/gallery/workstation/ScreenProject03.jpg"},
+            {"path":"assets/gallery/workstation/ScreenProject04.jpg"},
+            {"path":"assets/gallery/workstation/ScreenProject05.jpg"},
+            {"path":"assets/gallery/workstation/ScreenProject06.jpg"},
+            {"path":"assets/gallery/workstation/ScreenProject07.jpg"},
+            {"path":"assets/gallery/workstation/ScreenTeam01.jpg"},
+            {"path":"assets/gallery/workstation/ScreenTeam02.jpg"},
+            {"path":"assets/gallery/workstation/ScreenTeam03.jpg"},
+            {"path":"assets/gallery/workstation/ScreenUsers01.jpg"},
+            {"path":"assets/gallery/workstation/ScreenUsers02.jpg"},
+            {"path":"assets/gallery/workstation/ScreenUsers03.jpg"}
+        ]
+    }
+]

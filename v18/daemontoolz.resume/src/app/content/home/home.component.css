@@ -1,0 +1,10 @@
+mat-list-item:hover {
+    background-color: #1d1d1d;
+    transition: ease-in-out 50ms 50ms;
+
+    .mat-mdc-list-item-icon, .mat-mdc-list-item-title, .mat-mdc-list-item-line{
+        color: rgb(225,225,225);
+        transition: ease-in-out 50ms 50ms;
+    }
+}
+

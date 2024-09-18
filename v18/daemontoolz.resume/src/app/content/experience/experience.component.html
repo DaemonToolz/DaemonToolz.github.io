@@ -1,0 +1,203 @@
+<mat-card class="main">
+    <mat-card-header>
+        <mat-card-title>
+            <h1 translate="experience.title.key"></h1>
+        </mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+        <mat-expansion-panel class="headers-align" hideToggle>
+            <mat-expansion-panel-header>
+                <mat-panel-title>
+                    <h2 translate="experience.title.key"> </h2>
+                </mat-panel-title>
+                <mat-panel-description>
+                    <mat-icon> military_tech </mat-icon>
+                </mat-panel-description>
+            </mat-expansion-panel-header>
+
+            <mat-tab-group mat-stretch-tabs class="mat-elevation-z4" #ExperienceTabs>
+
+                <mat-tab *ngFor="let exp of (experiences$ | async); let i = index">
+                    <ng-template mat-tab-label>
+                        <div class="p-4">
+                            <mat-icon mat-card-avatar [svgIcon]="exp.company.toLowerCase()"></mat-icon>
+                            <h2 [innerHTML]="exp.company"></h2>
+                            <h3 [translate]="translateCompanyType(exp.type)"></h3>
+                        </div>
+                    </ng-template>
+                    <div class="w-full flex flex-1 flex-col space-y-2">
+                        <div class="grid grid-cols-3 h-36 place-items-center place-content-center">
+                    
+                            <button [disabled]="i <= 0 ? 'disabled':null" class="h-full w-full" mat-button
+                                (click)="ExperienceTabs.selectedIndex = i-1;">
+                                <mat-icon>chevron_left</mat-icon>
+                            </button>
+                        
+                            <mat-icon class="resize-icon" [svgIcon]="exp.company.toLowerCase()"></mat-icon>
+    
+                            <button [disabled]="i >= ((experiences$|async)?.length ?? 0)-1 ? 'disabled':null" class="h-full w-full" mat-button
+                                (click)="ExperienceTabs.selectedIndex = i+1;">
+                                <mat-icon>chevron_right</mat-icon>
+                            </button>
+                        </div>
+    
+                        <div class="flex flex-1 w-full place-items-center place-content-center">
+                            <span [innerHTML]="exp.company" class="text-xl font-bold"></span>
+                        </div>
+                      
+    
+                        <div class="flex flex-1 w-full place-items-center place-content-center space-x-2">
+                            <div class="flex flex-1 flex-col gap-2 place-items-center">
+                                <span translate="content.role.key" class="text-base font-bold"></span>
+                                <span [translate]="translateRole(exp.role)"></span>
+                            </div>
+                            <div class="flex flex-1 flex-col gap-2 place-items-center">
+                                <span translate="content.from.key"  class="text-base font-bold"></span>
+                                <span [innerHTML]="exp.from | date:'LL/yyyy'"></span>
+                            </div>
+                            <div *ngIf="exp.to !== null" class="flex flex-1 flex-col gap-2 place-items-center">
+                                <span translate="content.to.key"  class="text-base font-bold"></span>
+                                <span [innerHTML]="exp.to | date:'LL/yyyy'"></span>
+                            </div>
+                        </div>
+
+                        <mat-divider></mat-divider>
+                        <div *ngIf="exp.website !== null" class="flex flex-1 w-full place-items-center place-content-center">
+                            <a mat-button  target="_blank"  [href]="exp.website">
+                                <span translate="content.companylink.key"></span>
+                                <mat-icon>launch</mat-icon>
+                            </a>
+                        </div>
+                        <mat-divider></mat-divider>
+    
+                        <div *ngIf="exp.type === CompanyType.Customer" class="flex flex-1 w-full place-items-center place-content-center">
+                            <span translate="experience.type.maincompany.key" class="text-xl font-bold"></span>
+                        </div>
+
+                        <mat-tab-group dynamicHeight *ngIf="exp.type === CompanyType.Customer" mat-stretch-tabs class="mat-elevation-z4" [selectedIndex]="0">
+                            <mat-tab>
+                                <ng-template mat-tab-label>
+                                    <div class="p-4">
+                                        <mat-icon mat-card-avatar [svgIcon]="exp.employer!.toLowerCase()"></mat-icon>
+                                        <h2 [innerHTML]="exp.employer!"></h2>
+                                    </div>
+                                </ng-template>
+                            </mat-tab>
+                        </mat-tab-group>
+    
+
+                        <div *ngIf="exp.customers != undefined && exp.customers.length > 0"  class="flex flex-1 w-full place-items-center place-content-center">
+                            <span translate="content.customers.key" class="text-xl font-bold"></span>
+                        </div>
+                        <mat-tab-group dynamicHeight *ngIf="exp.customers != undefined && exp.customers.length>0"
+                            mat-stretch-tabs class="mat-elevation-z4">
+                            <mat-tab *ngFor="let customer of exp.customers">
+                                <ng-template mat-tab-label>
+                                    <div class="p-4">
+                                        <mat-icon mat-card-avatar [svgIcon]="customer.toLowerCase()"></mat-icon>
+                                        <h2 [innerHTML]="customer"></h2>
+                                    </div>
+                                </ng-template>
+                            </mat-tab>
+                        </mat-tab-group>
+    
+                        <mat-divider></mat-divider>
+                        <div class="columns-2 w-full place-items-center place-content-start p-2">
+                            <mat-chip-set class="break-inside-avoid break-before-avoid">
+                                <mat-chip *ngFor="let tech of exp.technologies">{{tech}}</mat-chip>
+                            </mat-chip-set>
+                            <p class="break-inside-avoid break-before-avoid" [translate]="exp.description"></p>
+                        </div>
+        
+                    </div>
+                 
+                </mat-tab>
+            </mat-tab-group>
+
+        </mat-expansion-panel>
+
+        <mat-expansion-panel class="headers-align" hideToggle>
+            <mat-expansion-panel-header>
+                <mat-panel-title>
+                    <h2 translate="experience.projects.key"> </h2>
+                </mat-panel-title>
+                <mat-panel-description>
+                    <mat-icon> science </mat-icon>
+                </mat-panel-description>
+            </mat-expansion-panel-header>
+            <mat-tab-group mat-stretch-tabs class="mat-elevation-z4" #ProjectTabs>
+                <mat-tab  *ngFor="let project of (projects$ | async); let i = index">
+                    <ng-template mat-tab-label>
+                        <div class="p-4">
+                            <mat-icon mat-card-avatar [ngClass]="project.released?'public':'private'" >{{project.released ? 'new_releases':'lock'}}</mat-icon>
+                            <h2 [innerHTML]="project.codename"></h2>
+                        </div>
+                    </ng-template>
+                    <div class="w-full flex flex-1 flex-col space-y-2">
+                        <div class="grid grid-cols-3 h-36 place-items-center place-content-center">
+                    
+                            <button [disabled]="i <= 0 ? 'disabled':null" class="h-full w-full" mat-button
+                                (click)="ProjectTabs.selectedIndex = i-1;">
+                                <mat-icon>chevron_left</mat-icon>
+                            </button>
+                        
+                            <span [innerHTML]="project.name" class="text-xl font-bold"></span>
+
+                            <button [disabled]="i >= ((projects$|async)?.length ?? 0)-1 ? 'disabled':null" class="h-full w-full" mat-button
+                                (click)="ProjectTabs.selectedIndex = i+1;">
+                                <mat-icon>chevron_right</mat-icon>
+                            </button>
+                        </div>       
+                                     
+                        <mat-divider></mat-divider>
+
+                        <div class="flex flex-1 w-full place-items-center place-content-center space-x-2">
+                            <div class="flex flex-1 flex-col gap-2 place-items-center">
+                                <span class="text-base font-bold" translate="content.version.key"> </span>
+                                <span [innerHTML]="project.version"></span>
+                            </div>
+                            
+                        </div>
+                  
+                        <mat-divider></mat-divider>
+
+                        <div class="columns-2 w-full place-items-center place-content-start p-2">
+                            <mat-chip-set class="break-inside-avoid break-before-avoid">
+                                <mat-chip *ngFor="let tech of project.technologies">{{tech}}</mat-chip>
+                            </mat-chip-set>
+                            <p class="break-inside-avoid break-before-avoid" [translate]="translateProjectDescription(project.description)"></p>
+                        </div>
+
+                        <div class="w-full grid grid-cols-2"> 
+                            <div *ngIf="project.descriptionLinks?.length ?? 0> 0" class="w-full p-2 flex flex-1 flex-col">
+                                <h3 translate="content.wikis.key"></h3>
+                                <mat-nav-list class="w-full">
+                                    <mat-list-item class="w-full" *ngFor="let link of project.descriptionLinks">
+                                        <a matLine target="_blank" class="w-full h-full flex flex-1 place-content-start place-items-center space-x-2" [href]="link.link">
+                                            <mat-icon> launch</mat-icon>
+                                            <span [innerHTML]="link.name"></span>
+                                        </a>
+                                      
+                                    </mat-list-item>
+                                </mat-nav-list>
+                            </div>
+    
+                            <div *ngIf="project.repoLinks?.length ?? 0 > 0" class="w-full p-2 flex flex-1 flex-col">
+                                <h3 translate="content.repo.key"></h3>
+                                <mat-nav-list class="maxWidth">
+                                    <mat-list-item *ngFor="let link of project.repoLinks">
+                                        <a matLine target="_blank" class="w-full h-full flex flex-1 place-content-start place-items-center space-x-2" [href]="link.link">
+                                            <mat-icon> launch</mat-icon>
+                                            <span [innerHTML]="link.name"></span>
+                                        </a>
+                                    </mat-list-item>
+                                </mat-nav-list>
+                            </div>
+                        </div>
+
+                    </div> 
+                </mat-tab>
+            </mat-tab-group>
+        </mat-expansion-panel>
+    </mat-card-content>
+</mat-card>
